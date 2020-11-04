@@ -1,0 +1,982 @@
+/* --- variables --- */
+@import "variables"
+
+/* --- fonts --- */
+@import "fonts.css"
+@import "iconmoon.css"
+
+/* --- specification --- */
+@import "specification"
+
+/* --- animate --- */
+@import "animate.css"
+
+.header
+  &-home
+    overflow: hidden
+    background: #727B86
+    .header-slid
+      height: 100vh
+  &-slider
+    height: 100%
+    .slick-list
+      z-index: 0
+  &-slid
+    overflow: hidden
+    z-index: 0
+    position: relative
+
+
+  &-img
+    height: 100%
+    width: 100%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+    &:after
+      content: ''
+      display: block
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      background: rgba(#2C3848, .5)
+      z-index: 0
+    img
+      width: auto
+      max-width: none
+      min-height: 100%
+  &-slid-content
+    z-index: 10
+    padding: 40px
+    .btn-box
+      margin-top: 40px
+  &-slid-wrapper
+    height: 100%
+    max-width: 70%
+    margin: 0 auto
+  &-title
+    font-size: 38px
+    color: $text-white
+    text-transform: uppercase
+    font-weight: 700
+    transition:  transform .6s ease-out, opacity .8s ease-out
+    opacity: 0
+    transform: translateY(-20%)
+
+.header-page
+  .header-wrappre
+    height: 60vh
+    z-index: 0
+    &:after
+      content: ''
+      display: block
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      background: rgba(#2C3848,.5)
+      z-index: 0
+  .header-content
+    padding: 40px
+    z-index: 1
+    max-width: 60%
+    margin: 0 auto
+.header-contact-page
+  .header-wrappre
+    background: url(img/contact-bg.png) no-repeat center center / cover
+
+.header-hall-page
+  .header-wrappre
+    background: url(img/hall-bg.png) no-repeat center center / cover
+
+.header-about-page
+  .header-wrappre
+    background: url(img/about-bg.png) no-repeat center center / cover
+
+.header-infrastructure-page
+  .header-wrappre
+    background: url(img/infrastructure-bg.png) no-repeat center center / cover
+
+.header-plan
+  margin-top: 50px
+.page-title
+  font-size: 38px
+  color: $text-white
+  text-transform: uppercase
+  font-weight: 700
+
+
+.js-header-title-active
+  transform: translateY(0%) !important
+  opacity: 1 !important
+.header-btn
+  opacity: 0
+  transition:  opacity .5s ease-out
+  transition-delay: .1s
+.js-header-btn-active
+  opacity: 1 !important
+.box-angle
+  span
+    position: absolute
+    width: 25px
+    height: 25px
+    display: block
+
+    &:nth-child(1), &:nth-child(3)
+      border-top: 1px solid $border-white
+      top: 0
+    &:nth-child(2), &:nth-child(4)
+      border-bottom: 1px solid $border-white
+      bottom: 0
+    &:nth-child(3), &:nth-child(4)
+      border-right: 1px solid $border-white
+      right: 0
+    &:nth-child(1), &:nth-child(2)
+      border-left: 1px solid $border-white
+      left: 0
+
+.slider
+  .slick-dots
+    li
+      padding: 0
+      font-size: 0
+      line-height: 0
+      margin: 10px
+      transition: all 0.3s ease-out
+      position: relative
+      display: block
+      overflow: hidden
+      padding-bottom: 0
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        transition: all 0.3s ease-out
+      button
+        font-size: 0
+        line-height: 0
+        background: none
+        width: 9px
+        height: 9px
+        padding: 0
+        margin: 0
+        cursor: pointer
+        transition: all 0.5s ease-out
+
+
+.slider.horizontal 
+  .slick-dots
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    margin-top: 40px
+    li
+      &:before
+        width: 0
+        height: 1px
+        left: 25px
+        transform: translateY(-50%)
+        top: 50%
+      button
+      &.slick-active
+        padding-right: 40px
+        &:before
+          width: 40px
+
+
+.slider.vertical
+  .slick-dots
+    li
+      &:before
+        width: 1px
+        height: 0
+        left: 50%
+        transform: translateX(-100%)
+        top: 20px
+      &.slick-active
+        padding-bottom: 50px
+        &:before
+          height: 40px
+
+.slider.white
+  .slick-dots
+    li
+      &:before
+        background: $border-white
+      button
+        border: 1px solid $border-white
+      &.slick-active
+        button
+          background: $border-white
+
+.slider.darken
+  .slick-dots
+    li
+      &:before
+        background: $text-black
+      button
+        border: 1px solid $text-black
+      &.slick-active
+        button
+          background: $text-black
+
+.header-slider
+  .slick-dots
+    position: absolute
+    top: 50%
+    right: 10%
+    transform: translateY(-50%)
+// --- header ---
+.top-line
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background: rgba(#EBEDEE, .8)
+  z-index: 100
+  padding: 10px 0
+  -webkit-transition: $transition
+  transition: $transition
+  -webkit-box-shadow: $box-shadow
+  -moz-box-shadow:    $box-shadow
+  box-shadow:         $box-shadow
+  &.active
+    background: rgba(#EBEDEE, 1)
+
+.logo
+  overflow: hidden
+  max-width: 125px
+  min-width: 125px
+  height: 45px
+  img
+    max-width: 100%
+    max-height: 100%
+    width: auto
+    height: auto
+
+.top-line
+  .nav
+    &-list
+      li
+        margin: 0 15px
+        a
+          color: $text-black
+          border-bottom: 1px solid rgba($red, 0)
+          transition: $transition
+        &.active, &:hover
+          a
+            border-bottom: 1px solid rgba($red, 1)
+
+  .btn.planning, .social-list, .top-line .phone, .lang
+    margin-left: 25px
+.social
+  &-item
+    margin-right: 10px
+    margin-top: 3px
+    &:last-child
+      margin-right: 0
+
+  &-link
+    font-size: 18px
+    transition: $transition
+    &:hover
+      color: $red
+
+header .phone
+  font-size: 18px
+  margin-left: 25px
+  font-weight: 700
+  &:hover
+    color: $red
+
+
+  &-current
+    &:before
+  &-list
+    position: absolute
+
+
+
+
+#distance
+  padding: 0
+  background: #EBEDEE
+
+#distance, #home-infrastructure, #form-contact
+  -webkit-box-shadow: $box-shadow
+  -moz-box-shadow:    $box-shadow
+  box-shadow:         $box-shadow
+  position: relative
+  
+.distance
+  &-item
+    width: 20%
+    padding: 35px 20px
+    border-left: 1px solid lighten($border, 20%)
+    &:last-child
+      border-right: 1px solid lighten($border, 20%)
+    i
+      font-size: 40px
+  &-value
+    font-size: 36px
+    line-height: 42px
+    margin: 5px 0
+    display: block
+    
+  &-title
+    font-size: 15px
+
+
+#home-about
+  background: #EBEDEE url(img/home-about-bg.png) no-repeat fixed center center / cover
+  .section-content
+    width: 100%
+    max-width: 950px
+    margin: 0 auto
+
+#home-infrastructure
+  background: $gray
+.infrastructure
+  &-list
+    margin: 50px 0
+  &-item
+    overflow: hidden
+    &.small
+      width: 18%
+      min-width: 18%
+      margin: 0 3.5% 50px
+    &.big
+      width: 23%
+      min-width: 23%
+      margin-right: 2.66%
+      margin-bottom: 2%
+      &:nth-child(4n)
+        margin-right: 0
+    &:hover
+      .infrastructure-box
+        .img-box:after
+          background: rgba($red, .98)
+        img
+          transform: scale(1.2)
+        .infrastructure-content
+          outline: 1px solid rgba(255,255,255,1)
+          outline-offset: -10px
+        .text, .more
+          opacity: 1
+    .title
+      word-wrap: break-word
+  &-box
+    overflow: hidden
+    color: $border-white
+    img
+      z-index: 0
+      position: relative
+    .img-box
+      line-height: 0
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(#2C3848, .75)
+        transition: $transition
+    .text, .more
+      opacity: 0
+    .more
+      text-transform: uppercase
+
+
+  &-content
+    z-index: 1
+    padding: 20px
+    outline: 1px solid rgba(255,255,255,0)
+    outline-offset: -10px
+    width: 100%
+    height: 100%
+    transition: $transition
+    i
+      font-size: 34px
+      left: 20px
+      bottom: 20px
+
+#home-infrastructure
+  .infrastructure
+    &-item
+      cursor: default
+
+#infrastructure
+  .infrastructure
+    &-item
+      cursor: pointer
+      .title
+        margin-top: 15px
+        margin-bottom: 15px
+
+#hall
+  margin-top: -80px
+  padding: 0
+
+.accordion
+  &-item
+    width: 23.5%
+    margin-right: 2%
+    padding: 45px 30px
+    background: $gray
+    -webkit-box-shadow: $box-shadow
+    -moz-box-shadow:    $box-shadow
+    box-shadow:         $box-shadow
+    transition: $transition
+    overflow: hidden
+    cursor: default
+    
+    &:last-child
+      margin-right: 0
+    &:hover
+      .accordion-img
+        opacity: 1
+      .accordion-content
+        opacity: 0
+        //transform: translateY(-50px)
+      .accordion-subtitle
+        opacity: 1
+        transform:  translate(0, 0)
+    i
+      font-size: 30px
+  &-content
+    height: 100%
+  &-content, &-text
+    max-width: 160px
+    margin: 0 auto
+    z-index: 1
+    position: relative
+  &-img
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    -webkit-justify-content: center
+    justify-content: center
+    opacity: 0
+    z-index: 0
+    &:before
+      content: ''
+      display: block
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      right: 0
+      background: url(img/tmp/foto-before.png) repeat-x center center / contain
+    img
+      width: auto
+      max-width: none
+      height: 100%
+  &-title
+    padding: 50px 0 15px
+    font-size: 18px
+    font-weight: 700
+  &-text
+    padding-bottom: 70px
+  &-subtitle
+    position: absolute
+    left: 30px
+    bottom: 30px
+    color: #EBEDEE
+    opacity: 0
+    transform:  translate(-50px, 50px)
+.additional
+  &-list
+    width: 40%
+    margin-right: 3%
+  &-item
+
+    &.active
+      .additional-link
+        background: darken($gray, 4%)
+        .number
+          background: $red
+  &-link
+    margin-bottom: 20px
+    width: 100%
+    background: $gray
+    height: 50px
+    padding-right: 10px
+    &:hover
+      background: darken($gray, 4%)
+      .number
+        background: $red
+    .number
+      width: 50px
+      min-width: 50px
+      height: 100%
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      -webkit-justify-content: center
+      justify-content: center
+      -webkit-align-items: center
+      align-items: center
+      background: #2C3848
+      font-size: 18px
+      font-weight: bold
+      color: $text-white
+      margin-right: 20px
+  &-box
+    width: 57%
+  &-cont
+    height: 400px
+    overflow: hidden
+    img
+      height: 100%
+      width: auto
+      max-width: none
+      text-align: center
+      
+
+#plan
+  .map
+    position: relative
+    -webkit-align-self: start
+    align-self: start
+  svg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100% 
+    height: 100%
+  .path
+    opacity: 0
+    -webkit-transition: $transition
+    transition: $transition
+    cursor: pointer
+    
+    &:hover, &.active
+      opacity: .5
+      fill: #222
+.plan-img
+  margin-top: 5px
+
+
+#popup-plan
+  .popup-wrapper.bg
+    .popup-content
+      z-index: 1
+    &:after
+      z-index: 0
+      content: ''
+      display: block
+      width: 190px
+      height: 250px
+      position: absolute
+      bottom: 0
+      right: 0
+      background: url(img/popup-floor-after.png) no-repeat right bottom / contain
+.popup-plan
+  &-item
+    &.active
+      .popup-plan-link
+        background: $red
+        color: #fff
+  &-link
+    border: 1px solid $red
+    color: $red
+    padding: 10px 35px
+    margin: 0 15px
+    text-transform: uppercase
+    -webkit-transition: $transition
+    transition: $transition
+    &:hover
+      background: $red
+      color: #fff
+.popup-plan-cont
+  margin: 30px auto
+  max-width: 80%
+  height: 400px
+
+  img
+    max-height: 100%
+    width: auto
+
+.popup-floor
+  &-list
+    margin: 50px 30px
+  &-item
+    &.active
+      .popup-floor-link
+        background: $red
+        color: #fff
+  &-link
+    background: $gray
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    margin: 3px
+    -webkit-transition: $transition
+    transition: $transition
+    &:hover
+      background: $red
+      color: #fff
+  &-content
+    h3
+      font-weight: 700
+.plan-floor
+  &-list
+    margin-top: 30px
+  &-item
+    background: $gray
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 35px
+    height: 35px
+    margin: 7px auto
+    -webkit-transition: $transition
+    transition: $transition
+    cursor: pointer
+    position: relative
+    // &:before
+    //   content: ''
+    //   display: block
+    //   position: absolute
+      
+    //   width: 10px
+    //   height: 70%
+    //   border-top: 2px solid #222
+    //   left: -30px
+    //   top: 18px
+    //   border-left: 2px solid #222
+    // &:after
+    //   content: ''
+    //   display: block
+    //   position: absolute
+    //   width: 25px
+    //   height: 50%
+    //   left: -30px
+    //   top: 0
+    //   border-left: 2px solid #222
+
+    // &:first-child
+    //   &:after
+    //     display: none
+    // &:last-child
+    //   &:before
+    //     border-left: none
+
+    &:hover, &.active
+      background: $red
+      color: #fff
+  &-title
+    font-weight: 700
+    margin-top: 25px
+    text-transform: uppercase
+    
+.popup-plan-text
+  padding: 10px 20px 20px
+  text-align: center
+  color: $border
+.conditional-marks
+  &-list
+  &-item
+    margin: 10px 20px
+  &-color
+    display: block
+    width: 20px
+    height: 20px
+    background: #777
+    margin-right: 12px
+    &.door
+      background: #8B8D95
+    &.stairs
+      background: #F1B66F
+    &.lift
+      background: #A3A5EB
+    &.toilet
+      background: #8CEBAD
+  &-value
+    &:before
+      content: '-'
+      margin-right: 10px
+#location
+.location
+  &-box
+    width: 48%
+    max-width: 360px
+    margin-top: 20px
+    &:nth-child(1)
+      margin-right: 1%
+    &:nth-child(2)
+      margin-left: 1%
+  &-title
+    font-size: 16px
+    font-weight: bold
+    margin-bottom: 20px
+    
+  &-item
+    height: 50px
+    background: #F9FAFA
+    margin-bottom: 20px
+    -webkit-transition: $transition
+    transition: $transition
+    cursor: default
+    
+    &:hover
+      background: darken(#F9FAFA, 3%)
+      .location-icon
+        background: darken($gray, 3%)
+    span
+      display: block
+  &-icon
+    width: 50px
+    min-width: 50px
+    background: $gray
+    height: 100%
+    font-size: 26px
+    -webkit-transition: $transition
+    transition: $transition
+
+  &-data
+    margin: 0 10px
+
+#customers
+.customers
+  &-slider
+    margin-top: 50px
+  &-slid
+    height: 65px
+    .img-box
+      height: 100%
+    img
+      max-height: 100%
+      width: auto
+
+#form-contact
+  padding: 0
+  .form
+    width: 40%
+    padding: 30px
+    background: #323A45 url(img/form-contact-bg.png) no-repeat center center / cover
+    &-wrapper
+      max-width: 420px
+  form
+    margin-bottom: 60px
+  .map
+    width: 60%
+    overflow: hidden
+
+#form-contact, #form
+  .form
+    color: #fff
+    &-wrapper
+      width: 100%
+      padding: 20px
+      height: auto
+      
+    &-title
+      color: $red
+      text-transform: uppercase
+      font-size: 24px
+    &-subtitle
+      font-size: 14px
+      margin: 5px 0 30px
+      display: block
+    &-content
+      a
+        color: #fff
+        &:hover
+          color: $red
+      .phone
+        margin-bottom: 5px
+        font-weight: bold
+        font-size: 18px
+        &:last-child
+          margin-bottom: 0
+
+#form
+  background: #333B42 url(img/form-bg.png)  no-repeat center center / cover
+
+.about
+  &-content
+    width: 100%
+    max-width: 850px
+    margin: 0 auto
+.text-content
+  blockquote
+    font-style: italic
+    color: #979FA7
+    margin: 0 0 0 30px
+    padding: 10px 0 10px 30px
+    border-left: 1px solid $red
+  li
+    margin-bottom: 15px
+    list-style-type: square
+    margin-left: 30px
+  h3, h4
+    font-weight: bold
+    margin-bottom: 15px
+  h3
+    font-size: 20px
+  h4
+    font-size: 18px
+  img
+    margin: 20px 0
+
+#aboute-gallery
+  background: #E5E6E7 url(img/aboute-gallery-bg.png) no-repeat center center / cover
+
+.gallery
+  .slick-initialized .slick-slide
+    margin: 0 10px
+    height: auto !important
+    
+  .gallery-slid
+    margin-bottom: 20px
+    &:hover
+      opacity: .85
+
+#hall-gallery
+  background: #E5E6E7 url(img/aboute-gallery-bg.png) no-repeat center center / cover
+
+
+.slider-row-2-col-4
+  a[data-fancybox="gallery"]
+    width: 100%
+#footer
+  padding: 40px
+  background: $text-black
+  .logo
+    transition: $transition
+    -webkit-filter: grayscale(250%) brightness(350%)
+    filter: grayscale(250%) brightness(350%)
+    &:hover
+      -webkit-filter: none
+      filter: none
+  .social
+    &-link
+      color: #fff
+      &:hover
+        color: $border
+
+
+  .nav
+    &-list
+      li
+        margin: 0 15px
+        a
+          color: white
+          transition: $transition
+          &:hover
+            text-decoration: underline
+
+
+// --- footer ---
+#footer
+
+/* --- hamburger --- */
+@import "humburger/hamburger"
+
+a.scroll-up
+  position: fixed
+  right: 30px
+  bottom: 30px
+  width: 45px
+  height: 45px
+  background: #E74C3C
+  &:after, &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 2px
+    height: 11px
+    background: #ffffff
+    border-radius: 2px
+    left: 50%
+    top: 50%
+    margin-top: -7px
+  &:after
+    transform: rotate(45deg)
+    margin-left: -5px
+  &:before
+    transform: rotate(-45deg)
+    margin-left: 2px
+  &:hover
+    opacity: .8
+/* --- media --- */
+
+
+
+#footer.position
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+
+.d-flex
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+.jc-center
+  justify-content: center
+#id-404
+  text-align: right
+  margin-top: 50px
+.not-found
+  background: #EFF1F1
+  padding-left: 30px
+  padding-right: 30px
+.not-found-aceent 
+  font-size: 30px
+  color: #D62C1A
+.not-found-big
+  font-size: 100px
+  font-weight: bold
+  color: #636363
+.not-found-text
+  color: #636363
+  font-size: 18px
+  margin-bottom: 30px
+.not-found-icon
+  width: 150px
+  margin-left: 30px
+  margin-top: 50px
+
+@media only screen and (max-width: 576px)
+  .not-found-aceent
+    font-size: 20px
+  .not-found-big
+    font-size: 70px
+  .not-found-text
+    font-size: 15px
+  .not-found-icon
+    width: 90px;
+    margin-left: 20px;
+@import "media"
+
+
+/* --- popup --- */
+@import "popup/popup-fadeIn-top"

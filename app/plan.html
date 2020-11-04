@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <title>3D plan</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- fonts google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <!-- slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+  </head>
+  <body>
+    <header id="header">
+      <div class="top-line">
+        <div class="wrapper">
+          <div class="d-flex jc-between ai-center">
+            <div class="logo d-flex jc-center ai-center">
+              <a href="#"><img src="img/logo.png" alt="#"></a>
+            </div>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="nav nav-js d-none-lg">
+              <ul class="nav-list d-flex ai-center-lg jc-center-lg f-wrap-lg">
+                <li  class="active">
+                  <a href="#">Про нас</a>
+                </li>
+                <li>
+                  <a href="#">Конференц-залу</a>
+                </li>
+                <li>
+                  <a href="#">Інфраструктура</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="nav-secondary d-flex ai-center d-none-lg">
+              <div class="social  d-none-lg">
+                <div class="social-list d-flex">
+                  <div class="social-item">
+                    <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="#" class="social-link"><i class="icon-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn planning">Планування</a>
+              <div class="d-flex ai-center jc-between">
+                <a href="tel:+380322371494" class="phone d-none-lg">
+                  +38 (032) 237-14-94
+                </a>
+                <div class="lang rel">
+                  <div class="lang-current rel d-none-lg">
+                    UA <i></i>
+                  </div>
+                  <ul class="lang-list d-none d-flex-lg">
+                    <li class="lang-item current">
+                      <a href="#">UA</a>
+                    </li>
+                    <li class="lang-item">
+                      <a href="#">RU</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="plan">
+      <div class="wrapper">
+        <div class="header-plan">
+          <div class="header-wrappre">
+            <div class="title-box centro">
+              <h2 class="section-title centro rel">Розташування</h2>
+            </div>
+          </div>
+          <div class="description-title centro">
+            <p>Географічне положення бізнес-центру "LEMBERG" створює унікальні умови для ведення бізнесу. Ця частина Львова динамічно розвивається  і продовжує вдосконалювати інфраструктуру</p>
+          </div>
+        </div>
+        <div class="plan-model d-flex">
+          <div class="plan-floor">
+            <div class="plan-floor-title">Поверхи</div>
+            <div class="plan-floor-list">
+              <div class="plan-floor-item popup-plan-open" data-path="9" data-popup-name="popup-plan">
+                <span>9</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="8" data-popup-name="popup-plan">
+                <span>8</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="7" data-popup-name="popup-plan">
+                <span>7</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="6" data-popup-name="popup-plan">
+                <span>6</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="5" data-popup-name="popup-plan">
+                <span>5</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="4" data-popup-name="popup-plan">
+                <span>4</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="3" data-popup-name="popup-plan">
+                <span>3</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="2" data-popup-name="popup-plan">
+                <span>2</span>
+              </div>
+              <div class="plan-floor-item popup-plan-open" data-path="1" data-popup-name="popup-plan">
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <svg viewBox="0 0 1100 516">
+              <path class="path popup-plan-open" d="m 1074.8907,430.08653 -104.56342,71.85972 -43.70803,-5.41378 -1.85616,1.67937 -422.80566,-59.41906 -8.66206,4.06586 -51.17685,-7.46881 -0.17678,-5.3033 -56.03821,-7.24785 V 398.62027 L 80.625,358.125 80.25,318 l 311.125,36.625 -47.75,12.25 0.125,17.875 620.03654,79.27765 112.07646,-69.47324 z" data-popup-floor="1" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="m 80.25,318 363.25,42.5 v 7 l 102,12 10,-4 15,1.5 28,-8.5 31,3 -0.5,11.5 194.5,22 84.25,-37.5 0.0625,-10.0625 2.4375,-0.875 L 911.5,330.5 824,363 617.5,341 568.5,354.5 443,340 l 0.5,-14 -364,-39.375 z" data-popup-floor="2" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="m 911.5,330.5 -0.25,-26.75 0.75,-0.625 c 0,0 0.25,-15.25 -0.25,-15.125 -0.5,0.125 -86.5,30.875 -86.5,30.875 l -206.375,-17.125 -52,14 -123.125,-9.875 0.125,-19 -366.5,-31.875 -0.25,3.625 0.625,0.625 1.75,27.375 364,39.375 -0.5,14 125.5,14.5 49,-13.5 206.5,22 z" data-popup-floor="3" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="m 733.40625,237.75 0.0403,30.2323 -13.43503,-1.23744 -0.35355,10.6066 -66.99837,17.14734 -33.4108,-2.65165 -0.37376,9.90285 -52,14 -123.125,-9.875 -0.5,-40.375 123.75,8.75 z" data-popup-floor="4" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="m 733.75,201.25 -0.34375,36.5 L 567,274.25 443.25,265.5 l -1,-45.75 124,7.75 z" data-popup-floor="5" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="m 734.75,165 -1,36.25 -167.5,26.25 -124,-7.75 -0.75,-39.5 125.5,6.5 z" data-popup-floor="6" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="M 735.75,128.75 734.75,165 567,186.75 441.5,180.25 V 138.5 l 125,4.75 z" data-popup-floor="7" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="m 736.75,90 -1,38.75 -169.25,14.5 -125,-4.75 -0.25,-44.5 125.25,3.75 z" data-popup-floor="8" data-popup-name="popup-plan"></path>
+
+              <path class="path popup-plan-open" d="m 441.25,51.5 51,1 -0.25,-3 17.5,-0.5 v 3.75 h 61 V 54.5 L 737.25,52.75 736.75,90 566.5,97.75 441.25,94 Z" data-popup-floor="9" data-popup-name="popup-plan"></path>
+
+            </svg>
+            <img src="img/plan.png" alt="#" class="plan-img">
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="form-contact" class="d-flex f-wrap">
+      <div class="form d-flex jc-end ai-center jc-center-md">
+        <div class="form-wrapper d-flex ai-center rel">
+          <div class="box">
+            <form>
+              <h3 class="form-title centro">Залиште заявку</h3>
+              <span class="form-subtitle centro">та отримайте детальнішу інформацію щодо приміщень</span>
+              <div class="input-box rel">
+                <input type="text" name="name" class="input" placeholder="Ім'я" id="input-name">
+                <label for="input-name" class="label abs"><i class="icon-user-regular"></i></label>
+              </div>
+              <div class="input-box rel">
+                <input type="text" name="phone" class="input" placeholder="Телефон" id="input-phone">
+                <label for="input-phone" class="label abs"><i class="icon-mobile-alt-solid"></i></label>
+              </div>
+              <button class="btn btn-solid w-full">Відправити</button>
+            </form>
+            <div class="form-content centro">
+              <p>За додатковою інформаці запрошуємо Вас до  бізнес центру LEMBERG</p>
+              <p>м. Львів, вул. Б. Хмельницького, 176</p>
+              <p><a href="tel:+380322371494" class="phone">+38 (032) 237-14-94</a></p>
+              <p><a href="tel:+380322371494" class="phone">+38 (032) 237-14-94</a></p>
+              <p>e-mail: <a href="mailto:e-mail: orenda@lemberg.ua" class="mail">orenda@lemberg.ua</a></p>
+
+            </div>
+            
+          </div>
+          <div class="box-angle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <img src="img/tmp/map.png" alt="#">
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="d-flex jc-between ai-center d-block-xs">
+          <div class="logo d-flex jc-center ai-center">
+            <a href="#"><img src="img/logo.png" alt="#"></a>
+          </div>
+          <nav class="nav nav-js">
+            <ul class="nav-list d-flex d-block-sm">
+              <li  class="active">
+                <a href="#">Про нас</a>
+              </li>
+              <li>
+                <a href="#">Конференц-залу</a>
+              </li>
+              <li>
+                <a href="#">Інфраструктура</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-secondary">
+            <div class="social">
+              <div class="social-list d-flex">
+                <div class="social-item">
+                  <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+                </div>
+                <div class="social-item">
+                  <a href="#" class="social-link"><i class="icon-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <div class="popup rel d-none" id="popup-plan">
+      <div class="size-full d-flex jc-center ai-center">
+        <div class="popup-wrapper rel bg">
+          <div class="popup-content rel">
+            <div class="popup-floor-content">
+              <div class="popup-floor-tab tab-wrap">
+                <div class="popup-floor-box">
+                  <div class="popup-floor-cont tab-cont" id="floor_1">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 1</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_1a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_1b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_1a">
+                            <img src="img/floor-1.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_1b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_2">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 2</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_2a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_2b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_2a">
+                            <img src="img/floor-2.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_2b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_3">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 3</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_3a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_3b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_3a">
+                            <img src="img/floor-3.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_3b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_4">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 4</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_4a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_4b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_4a">
+                            <img src="img/floor-4.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_4b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_5">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 5</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_5a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_5b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_5a">
+                            <img src="img/floor-5.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_5b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_6">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 6</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_6a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_6b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_6a">
+                            <img src="img/floor-6.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_6b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_7">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 7</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_7a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_7b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_7a">
+                            <img src="img/floor-7.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_7b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_8">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 8</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_8a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_8b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_8a">
+                            <img src="img/floor-8.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_8b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup-floor-cont tab-cont hidden" id="floor_9">
+                    <div class="popup-title-wrapper">
+                      <h3 class="popup-title">Поверх 9</h3>
+                    </div>
+                    <div class="popup-plan-content">
+                      <div class="popup-plan-tab tab-wrap-plan">
+                        <p class="popup-plan-text">Загальна площа оренди 750 м2</p>
+                        <ul class="popup-plan-list tabs-plan d-flex jc-center">
+                          <li class="popup-plan-item active">
+                            <a href="#tab_9a" class="popup-plan-link">3d план</a>
+                          </li>
+                          <li class="popup-plan-item">
+                            <a href="#tab_9b" class="popup-plan-link">2d план</a>
+                          </li>
+                        </ul>
+                        <div class="popup-plan-box">
+                          <div class="popup-plan-cont tab-cont-plan d-center" id="tab_9a">
+                            <img src="img/floor-9.png" alt="#">
+                          </div>
+                          <div class="popup-plan-cont tab-cont-plan hidden d-center" id="tab_9b">
+                            2d план
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conditional-marks-list d-center f-wrap">
+                  <div class="conditional-marks-item d-center">
+                    <span class="conditional-marks-color door"></span>
+                    <span class="conditional-marks-value">двері</span>
+                  </div>
+                  <div class="conditional-marks-item d-center">
+                    <span class="conditional-marks-color stairs"></span>
+                    <span class="conditional-marks-value">сходи</span>
+                  </div>
+                  <div class="conditional-marks-item d-center">
+                    <span class="conditional-marks-color lift"></span>
+                    <span class="conditional-marks-value">ліфт</span>
+                  </div>
+                  <div class="conditional-marks-item d-center">
+                    <span class="conditional-marks-color toilet"></span>
+                    <span class="conditional-marks-value">туалет</span>
+                  </div>
+                </div>
+                <div class="d-center  d-block-xs">
+                  <span class="popup-floor-title">Поверхи</span>
+                  <ul class="popup-floor-list tabs d-flex jc-center">
+                    <li class="popup-floor-item active">
+                      <a href="#floor_1" class="popup-floor-link">1</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_2" class="popup-floor-link">2</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_3" class="popup-floor-link">3</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_4" class="popup-floor-link">4</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_5" class="popup-floor-link">5</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_6" class="popup-floor-link">6</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_7" class="popup-floor-link">7</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_8" class="popup-floor-link">8</a>
+                    </li>
+                    <li class="popup-floor-item">
+                      <a href="#floor_9" class="popup-floor-link">9</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="popup-close abs" data-popup-name="popup-plan">
+              <i class="icon-close"></i>
+            </div>
+          </div>
+        </div>
+        <span class="popup-close-bg size-full abs" data-popup-name="popup-plan"></span>
+      </div>
+    </div>
+
+    <a href="#header" class="scroll-up scroll d-none"></a>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- slick-css -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- page-articl-slider JS -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <!-- My JS -->
+    <script src="js/jquery.spincrement.js"></script>
+    <script src="js/spincrement.js"></script>
+    <!-- My JS -->
+    <script src="js/common.js"></script>
+
+
+  </body>
+</html>
