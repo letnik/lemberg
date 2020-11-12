@@ -1,0 +1,228 @@
+<!-- dev branch -->
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <title>Site name</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- fonts google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <!-- slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+  </head>
+  <body>
+    <header id="header">
+      <div class="top-line">
+        <div class="before-line">
+          <div class="wrapper">
+            <div class="d-flex jc-between ai-center">
+
+              <a href="tel:+380322371494" class="phone d-none-lg">+38 (032) 237-14-94</a>
+              <div class="social  d-none-lg">
+                <div class="social-  list d-flex">
+                  <div class="social-item">
+                    <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="#" class="social-link"><i class="icon-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-line">
+          <div class="wrapper">
+            <div class="d-flex jc-between ai-center">
+              <div class="logo d-flex jc-center ai-center">
+                <a href="#"><img src="img/logo.png" alt="#"></a>
+              </div>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <nav class="nav nav-js d-none-lg">
+                <ul class="nav-list d-flex ai-center-lg jc-center-lg f-wrap-lg">
+                  <li  class="active">
+                    <a href="#">Вільні приміщення</a>
+                  </li>
+                  <li>
+                    <a href="#">Планування</a>
+                  </li>
+                  <li>
+                    <a href="#">Конференц зал</a>
+                  </li>
+                  <li>
+                    <a href="#">Технічні рішення</a>
+                  </li>
+                  <li>
+                    <a href="#">Галерея</a>
+                  </li>
+                  <li>
+                    <a href="#">Новини</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="nav-secondary d-flex ai-center d-none-lg">
+                <!-- <a href="#" class="btn planning btn-solid">Планування</a> -->
+                <div class="d-flex ai-center jc-between">
+                  <div class="lang rel">
+                    <div class="lang-current rel d-none-lg">
+                      UA <i></i>
+                    </div>
+                    <ul class="lang-list d-none d-flex-lg">
+                      <li class="lang-item current">
+                        <a href="#">UA</a>
+                      </li>
+                      <li class="lang-item">
+                        <a href="#">RU</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-page header-contact-page">
+        <div class="header-wrappre d-flex jc-center ai-center rel">
+          <div class="header-content rel">
+            <h1 class="page-title centro">Галерея</h1>
+            <div class="box-angle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="gallery" class="gallery">
+      <div class="wrapper">
+        <div class="title-box centro">
+          <h2 class="section-title centro rel">Галерея</h2>
+        </div>
+        <div class="gallery-type-list d-flex ai-center">
+          <div class="gallery-type-item">
+            <div class="gallery-type-img">
+              <img src="img/gallery-type-3.jpg" alt="#">
+            </div>
+            <div class="gallery-type-content d-flex ai-center jc-between">
+              <div class="gallery-type-name"><span>Офісні приміщення</span></div>
+              <div class="btn btn-solid">Переглянути більше</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="form-contact" class="d-flex f-wrap">
+      <div class="form d-flex jc-end ai-center jc-center-md">
+        <div class="form-wrapper d-flex ai-center rel">
+          <div class="box">
+            <form>
+              <h3 class="form-title centro">Залиште заявку</h3>
+              <span class="form-subtitle centro">та отримайте детальнішу інформацію щодо приміщень</span>
+              <div class="input-box rel">
+                <input type="text" name="name" class="input" placeholder="Ім'я" id="input-name">
+                <label for="input-name" class="label abs"><i class="icon-user-regular"></i></label>
+              </div>
+              <div class="input-box rel">
+                <input type="text" name="phone" class="input" placeholder="Телефон" id="input-phone">
+                <label for="input-phone" class="label abs"><i class="icon-mobile-alt-solid"></i></label>
+              </div>
+              <button class="btn btn-solid w-full">Відправити</button>
+            </form>
+            <div class="form-content centro">
+              <p>За додатковою інформаці запрошуємо Вас до  бізнес центру LEMBERG</p>
+              <p>м. Львів, вул. Б. Хмельницького, 176</p>
+              <p><a href="tel:+380322371494" class="phone">+38 (032) 237-14-94</a></p>
+              <p><a href="tel:+380322371494" class="phone">+38 (032) 237-14-94</a></p>
+              <p>e-mail: <a href="mailto:e-mail: orenda@lemberg.ua" class="mail">orenda@lemberg.ua</a></p>
+
+            </div>
+            
+          </div>
+          <div class="box-angle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <img src="img/tmp/map.png" alt="#">
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="d-flex jc-between ai-center d-block-xs">
+          <div class="logo d-flex jc-center ai-center">
+            <a href="#"><img src="img/logo.png" alt="#"></a>
+          </div>
+          <nav class="nav nav-js">
+            <ul class="nav-list d-flex d-block-sm">
+              <li  class="active">
+                <a href="#">Про нас</a>
+              </li>
+              <li>
+                <a href="#">Конференц-залу</a>
+              </li>
+              <li>
+                <a href="#">Інфраструктура</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-secondary">
+            <div class="social">
+              <div class="social-list d-flex">
+                <div class="social-item">
+                  <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+                </div>
+                <div class="social-item">
+                  <a href="#" class="social-link"><i class="icon-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#header" class="scroll-up scroll d-none"></a>
+
+          <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- slick-css -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- page-articl-slider JS -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+    <!-- My JS -->
+    <script src="js/jquery.spincrement.js"></script>
+    <script src="js/spincrement.js"></script>
+    <!-- My JS -->
+    <script src="js/common.js"></script>
+  </body>
+</html>

@@ -1,15 +1,15 @@
 /* --- variables --- */
-@import "variables"
-
+@import "parts/variables"
+@import "parts/grid"
 /* --- fonts --- */
-@import "fonts.css"
-@import "iconmoon.css"
+@import "includes/fonts.css"
+@import "includes/iconmoon.css"
 
 /* --- specification --- */
-@import "specification"
+@import "parts/specification"
 
 /* --- animate --- */
-@import "animate.css"
+@import "includes/animate.css"
 
 .header
   &-home
@@ -69,7 +69,7 @@
 
 .header-page
   .header-wrappre
-    height: 60vh
+    height: 55vh
     z-index: 0
     &:after
       content: ''
@@ -242,12 +242,16 @@
   right: 0
   background: rgba(#EBEDEE, .8)
   z-index: 100
-  padding: 10px 0
   -webkit-transition: $transition
   transition: $transition
   -webkit-box-shadow: $box-shadow
   -moz-box-shadow:    $box-shadow
   box-shadow:         $box-shadow
+  .before-line
+    background: $before_line
+    padding: 5px 0
+  .nav-line
+    padding: 10px 0
   &.active
     background: rgba(#EBEDEE, 1)
 
@@ -277,6 +281,11 @@
 
   .btn.planning, .social-list, .top-line .phone, .lang
     margin-left: 25px
+  .btn.planning
+    opacity: .6
+    &:hover
+      opacity: 1
+
 .social
   &-item
     margin-right: 10px
@@ -291,8 +300,7 @@
       color: $red
 
 header .phone
-  font-size: 18px
-  margin-left: 25px
+  font-size: 16px
   font-weight: 700
   &:hover
     color: $red
@@ -304,12 +312,6 @@ header .phone
     position: absolute
 
 
-
-
-#distance
-  padding: 0
-  background: #EBEDEE
-
 #distance, #home-infrastructure, #form-contact
   -webkit-box-shadow: $box-shadow
   -moz-box-shadow:    $box-shadow
@@ -317,12 +319,25 @@ header .phone
   position: relative
   
 .distance
+  padding: 0
+  &.lighten
+    background: #EBEDEE
+    .distance
+      &-item
+        border-left: 1px solid lighten($border, 20%)
+        &:last-child
+          border-right: 1px solid lighten($border, 20%)
+  &.darken
+    background: #28313E
+    .distance
+      &-item
+        border-left: 1px solid #3A424E
+        color: #fff
+        &:last-child
+          border-right: 1px solid #3A424E
   &-item
     width: 20%
     padding: 35px 20px
-    border-left: 1px solid lighten($border, 20%)
-    &:last-child
-      border-right: 1px solid lighten($border, 20%)
     i
       font-size: 40px
   &-value
@@ -333,6 +348,24 @@ header .phone
     
   &-title
     font-size: 15px
+
+#home-advantages
+  background: #EBEDEE  
+
+.advantages
+  &-item
+    margin: 30px 0
+  &-icon
+    i
+      color: $red
+      font-size: 40px
+    &.icon-left
+      margin-right: 20px 
+
+.advantages-title, .accordion-title, .no-premises-title span
+  font-size: 18px
+  font-weight: 700
+  margin-bottom: 20px
 
 
 #home-about
@@ -484,8 +517,8 @@ header .phone
       max-width: none
       height: 100%
   &-title
+    margin: 0
     padding: 50px 0 15px
-    font-size: 18px
     font-weight: 700
   &-text
     padding-bottom: 70px
@@ -496,27 +529,50 @@ header .phone
     color: #EBEDEE
     opacity: 0
     transform:  translate(-50px, 50px)
-.additional
+
+.additional 
   &-list
     width: 40%
+  &-box
+    width: 57%
+  &-cont
+    height: 400px
+    overflow: hidden
+    img
+      height: 100%
+      width: auto
+      max-width: none
+      text-align: center
+  &-link
+    &:hover
+      background: darken($gray, 4%)
+      .number
+        background: $red
+.business-benefits
+  margin: 30px 0
+  &-text 
+    p
+      margin-left: 70px
+  &-img
+    position: absolute
+.additional, .business-benefits
+  &-list
     margin-right: 3%
   &-item
-
+    margin-bottom: 20px
     &.active
       .additional-link
         background: darken($gray, 4%)
         .number
           background: $red
-  &-link
-    margin-bottom: 20px
+  &-box
+    overflow: hidden
+  &-link, &-header
     width: 100%
     background: $gray
     height: 50px
     padding-right: 10px
-    &:hover
-      background: darken($gray, 4%)
-      .number
-        background: $red
+
     .number
       width: 50px
       min-width: 50px
@@ -535,18 +591,25 @@ header .phone
       font-weight: bold
       color: $text-white
       margin-right: 20px
-  &-box
-    width: 57%
-  &-cont
-    height: 400px
-    overflow: hidden
-    img
-      height: 100%
-      width: auto
-      max-width: none
-      text-align: center
-      
 
+
+      
+.reviews
+  &-list
+    margin: 30px 0
+  &-item
+  &-wrap
+    margin: 0 15px
+    padding: 30px
+    background: #F9FAFA
+  &-icon
+    margin-right: 20px
+    i
+      font-size: 40px
+  &-author
+    .name
+      font-size: 18px
+      font-weight: 700
 #plan
   .map
     position: relative
@@ -570,7 +633,108 @@ header .phone
 .plan-img
   margin-top: 5px
 
+.type-space
+  &-item
+    margin-top: 60px
+    margin-bottom: 30px
+    &:nth-last-child(even)
+      .type-space-content
+        order: -1
+  &-title
+    font-size: 18px
+    text-transform: uppercase
+    color: $text-black
+    font-weight: bold
+  .btn-box
+    margin-top: 40px
+  &-text, &-icon-list
+    ul
+      display: flex
+      margin: 15px 0
+      flex-wrap: wrap
+      justify-content: space-between
+    li
+      position: relative
+      display: flex
+      align-items: center
+      width: 30%
+      margin: 15px 0
+      &:before
+        content: '\e900'
+        font-family: 'icomoon' !important
+        display: block
+        font-size: 30px
+        margin-right: 15px
 
+
+.free-premises
+  &-item
+    margin-bottom: 15px
+    margin-top: 15px
+    position: relative
+    &:hover
+      .free-premises-img
+        img
+          transform: scale(1.05)
+          opacity: 0.85
+  &-img
+    line-height: 0
+    overflow: hidden
+    img
+      transition: .3s all
+  &-tab
+    margin: 30px 20px
+    a
+      text-transform: uppercase
+      text-align: center
+      color: #7D7D7D
+      padding: 2px 2px
+      &:hover
+        color: $text-black
+        border-bottom: 1px solid $red
+    &.active
+      a
+        color: $text-black
+        // font-weight: bold
+        border-bottom: 1px solid $red
+  &-square
+    position: absolute
+    bottom: 30px
+    left: 30px
+    background: $gray
+    padding: 20px 15px
+    span
+      font-size: 18px
+      font-weight: bold
+    i
+      &:before 
+        content: '\e901'
+        font-family: 'icomoon' !important
+        display: block
+        font-size: 30px
+        font-style: normal
+        margin-bottom: 10px
+  &-link
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    margin: 0
+    padding: 0
+
+  
+
+.no-premises
+  &-wrap
+    margin-top: 30px
+    margin-bottom: 30px
+  &-img
+    padding: 30px
+    background: #F1F1F1
+  &-title
+    text-transform: uppercase
+        
 #popup-plan
   .popup-wrapper.bg
     .popup-content
@@ -975,7 +1139,7 @@ a.scroll-up
   .not-found-icon
     width: 90px;
     margin-left: 20px;
-@import "media"
+@import "parts/media"
 
 
 /* --- popup --- */
