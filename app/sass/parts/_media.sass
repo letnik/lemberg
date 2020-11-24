@@ -158,7 +158,12 @@
     width: 30px
     height: 30px
     margin: 4px auto
-
+  .article-list.grid-list .article-meta-data .article-comment, .article-list.grid-list .article-meta-data .article-date
+    margin-right: 17px
+  .article-comment i:before, .article-date i:before
+    margin-right: 5px
+  .top-line .nav-secondary
+    position: absolute
 @media only screen and (max-width: 992px)
   body, p
     font-size: 14px
@@ -293,12 +298,12 @@
     padding-top: 25px
   .accordion-text
     padding-bottom: 45px
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 767px)
   .wrapper
     max-width: 540px
   .no-wrapper-sm, .no-wrapper-md, .no-wrapper-lg
     max-width: 100%
-    padding: 0
+
   .d-none-sm
     display: none
 
@@ -413,7 +418,7 @@
   .header-slid-wrapper
     max-width: 80%
   .header-slid-content
-    padding: 15px
+    padding: 40px 25px
   .header-slid
     padding-top: 20px
   .header-slider .slick-dots
@@ -508,6 +513,13 @@
       border-bottom: none
     &:nth-child(2n)
       border-left: 1px solid #ced2d6
+  .distance.darken
+    .distance-item
+      border-bottom: 1px solid #3a424e
+      &:last-child
+        border-bottom: none
+      &:nth-child(2n)
+        border-left: 1px solid #3a424e
   .plan-floor
     display: block
   .plan-floor-title

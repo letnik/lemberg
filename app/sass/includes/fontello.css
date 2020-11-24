@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?87082170');
+  src: url('../fonts/fontello.eot?87082170#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?87082170') format('woff2'),
+       url('../fonts/fontello.woff?87082170') format('woff'),
+       url('../fonts/fontello.ttf?87082170') format('truetype'),
+       url('../fonts/fontello.svg?87082170#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.svg?87082170#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-user:before { content: '\e666'; } /* '' */
+.icon-chek:before { content: '\e802'; } /* '' */
+.icon-coffe:before { content: '\e804'; } /* '' */
+.icon-coffe_cup:before { content: '\e805'; } /* '' */
+.icon-coffe_break_2:before { content: '\e807'; } /* '' */
+.icon-comment:before { content: '\e808'; } /* '' */
+.icon-conference:before { content: '\e809'; } /* '' */
+.icon-fan:before { content: '\e80d'; } /* '' */
+.icon-flip_chart:before { content: '\e80e'; } /* '' */
+.icon-gym:before { content: '\e80f'; } /* '' */
+.icon-house_plane:before { content: '\e811'; } /* '' */
+.icon-landscaping:before { content: '\e813'; } /* '' */
+.icon-location:before { content: '\e815'; } /* '' */
+.icon-microfono:before { content: '\e816'; } /* '' */
+.icon-office:before { content: '\e817'; } /* '' */
+.icon-phone:before { content: '\e819'; } /* '' */
+.icon-projector_small:before { content: '\e81c'; } /* '' */
+.icon-table_round:before { content: '\e820'; } /* '' */
+.icon-wifi:before { content: '\e826'; } /* '' */
+.icon-arrow_solid:before { content: '\e828'; } /* '' */
+.icon-arrow-right:before { content: '\e82a'; } /* '' */
+.icon-calendar:before { content: '\e82c'; } /* '' */
+.icon-elecrtic:before { content: '\e82e'; } /* '' */
+.icon-coffe_break:before { content: '\e900'; } /* '' */
+.icon-conferernce-room:before { content: '\e901'; } /* '' */
+.icon-proector:before { content: '\e902'; } /* '' */
+.icon-parking:before { content: '\e903'; } /* '' */
+.icon-plane:before { content: '\e904'; } /* '' */
+.icon-restaurant:before { content: '\e905'; } /* '' */
+.icon-road:before { content: '\e906'; } /* '' */
+.icon-telecomunication:before { content: '\e907'; } /* '' */
+.icon-train:before { content: '\e908'; } /* '' */
+.icon-window:before { content: '\e909'; } /* '' */
+.icon-bus:before { content: '\e90a'; } /* '' */
+.icon-camera:before { content: '\e90b'; } /* '' */
+.icon-centre:before { content: '\e90c'; } /* '' */
+.icon-conditioner:before { content: '\e90d'; } /* '' */
+.icon-facebook:before { content: '\e90e'; } /* '' */
+.icon-instagram:before { content: '\e90f'; } /* '' */
+.icon-mobile-alt-solid:before { content: '\e910'; } /* '' */
+.icon-lift:before { content: '\e911'; } /* '' */
+.icon-shop:before { content: '\e913'; } /* '' */
+.icon-Frame1:before { content: '\e913'; } /* '' */
+.icon-arrow:before { content: '\e914'; } /* '' */
+.icon-car:before { content: '\e915'; } /* '' */
+.icon-district:before { content: '\e916'; } /* '' */
+.icon-hotel:before { content: '\e917'; } /* '' */
+.icon-user-regular:before { content: '\e918'; } /* '' */
+.icon-close:before { content: '\e919'; } /* '' */

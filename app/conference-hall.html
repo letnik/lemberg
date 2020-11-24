@@ -25,34 +25,12 @@
   <body>
     <header id="header">
       <div class="top-line">
-        <div class="wrapper">
-          <div class="d-flex jc-between ai-center">
-            <div class="logo d-flex jc-center ai-center">
-              <a href="#"><img src="img/logo.png" alt="#"></a>
-            </div>
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <nav class="nav nav-js d-none-lg">
-              <ul class="nav-list d-flex ai-center-lg jc-center-lg f-wrap-lg">
-                <li>
-                  <a href="#">Про нас</a>
-                </li>
-                <li class="active">
-                  <a href="#">Конференц-залу</a>
-                </li>
-                <li>
-                  <a href="#">Інфраструктура</a>
-                </li>
-                <li>
-                  <a href="#">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="nav-secondary d-flex ai-center d-none-lg">
-              <div class="social  d-none-lg">
+        <div class="before-line">
+          <div class="wrapper">
+            <div class="d-flex jc-between ai-center">
+
+              <a href="tel:+380322371494" class="phone"><i class="icon-phone"></i>+38 (032) 237-14-94</a>
+              <div class="social">
                 <div class="social-list d-flex">
                   <div class="social-item">
                     <a href="#" class="social-link"><i class="icon-facebook"></i></a>
@@ -62,23 +40,61 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn planning">Планування</a>
-              <div class="d-flex ai-center jc-between">
-                <a href="tel:+380322371494" class="phone d-none-lg">
-                  +38 (032) 237-14-94
-                </a>
-                <div class="lang rel">
-                  <div class="lang-current rel d-none-lg">
-                    UA <i></i>
+            </div>
+          </div>
+        </div>
+        <div class="nav-line">
+          <div class="wrapper">
+            <div class="d-flex jc-between ai-center">
+              <div class="logo d-flex jc-center ai-center">
+                <a href="#"><img src="img/logo.png" alt="#"></a>
+              </div>
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <nav class="nav nav-js d-none-lg">
+                <ul class="nav-list d-flex ai-center-lg jc-center-lg f-wrap-lg">
+                  <li  class="active">
+                    <a href="#">Вільні приміщення</a>
+                  </li>
+                  <li>
+                    <a href="#">Планування</a>
+                  </li>
+                  <li>
+                    <a href="#">Конференц зал</a>
+                  </li>
+                  <li>
+                    <a href="#">Технічні рішення</a>
+                  </li>
+                  <li>
+                    <a href="#">Галерея</a>
+                  </li>
+                  <li>
+                    <a href="#">Новини</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="nav-secondary d-flex ai-center d-none-lg">
+                <!-- <a href="#" class="btn planning btn-solid">Планування</a> -->
+                <div class="d-flex ai-center jc-between">
+                  <div class="lang rel">
+                    <div class="lang-current rel d-none-lg">
+                      UA <i></i>
+                    </div>
+                    <ul class="lang-list d-none d-flex-lg">
+                      <li class="lang-item current">
+                        <a href="#">UA</a>
+                      </li>
+                      <li class="lang-item">
+                        <a href="#">RU</a>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="lang-list d-none d-flex-lg">
-                    <li class="lang-item current">
-                      <a href="#">UA</a>
-                    </li>
-                    <li class="lang-item">
-                      <a href="#">RU</a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -161,147 +177,204 @@
             </li>
           </ul>
         </div>
+      </div>
     </section>
-
-    <section id="hall-additional">
-      <div class="wrapper no-wrapper-sm">
-        <div class="title-box centro">
-          <h2 class="section-title centro rel">Додаткові опції</h2>
-        </div>
-
-
-        <div class="additional-tab tab-wrap d-flex jc-between d-block-xs">
-          <ul class="additional-list tabs">
-            <li class="additional-item active">
-              <a href="#tab_1" class="additional-link d-flex ai-center jc-start"><span class="number">01</span><span class="name">Зал зі столами та без</span></a>
+    <section id="additionally" class="additionally">
+      <div class="wrapper">
+        <div class="row">
+          <div class="one-full">
+            <div class="title-box centro">
+              <h2 class="section-title centro rel">Додаткові опції</h2>
+            </div>
+          </div>
+          <ul class="additionally-list d-flex f-wrap">
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-table_round"></i></div>
+                <div class="additionally-name"><span>Зал зі столами та без</span></div>
+              </div>
             </li>
-            <li class="additional-item">
-              <a href="#tab_2" class="additional-link d-flex ai-center jc-start"><span class="number">02</span><span class="name">Підключення до мережі інтернет</span></a>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-flip_chart"></i></div>
+                <div class="additionally-name"><span>Фліпчарт (100х300 см)</span></div>
+              </div>
             </li>
-            <li class="additional-item">
-              <a href="#tab_3" class="additional-link d-flex ai-center jc-start"><span class="number">03</span><span class="name">Фліпчарт (100х300 см)</span></a>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-fan"></i></div>
+                <div class="additionally-name"><span>Кімнати з кондиціонером</span></div>
+              </div>
             </li>
-            <li class="additional-item">
-              <a href="#tab_4" class="additional-link d-flex ai-center jc-start"><span class="number">04</span><span class="name">Ресторан-бістро «Лемберґ»</span></a>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-wifi"></i></div>
+                <div class="additionally-name"><span>Підключення до мережі інтернет</span></div>
+              </div>
             </li>
-            <li class="additional-item">
-              <a href="#tab_5" class="additional-link d-flex ai-center jc-start"><span class="number">05</span><span class="name">Кімнати з кондиціонером</span></a>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-coffe"></i></div>
+                <div class="additionally-name"><span>Ресторан-бістро LEMBERG</span></div>
+              </div>
             </li>
-            <li class="additional-item">
-              <a href="#tab_6" class="additional-link d-flex ai-center jc-start"><span class="number">06</span><span class="name"> Кімната в конференц-залі для кави-брейк</span></a>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-coffe_break_2"></i></div>
+                <div class="additionally-name"><span>Кімната в конферецзалі для кофебрейк</span></div>
+              </div>
+            </li>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-proector"></i></div>
+                <div class="additionally-name"><span>Проектор</span></div>
+              </div>
+            </li>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-microfono"></i></div>
+                <div class="additionally-name"><span>Мікрофон</span></div>
+              </div>
+            </li>
+            <li class="additionally-item one-half-sm one-third-lg">
+              <div class="additionally-wrap d-flex ai-center">
+                <div class="additionally-icon"><i class="icon-landscaping"></i></div>
+                <div class="additionally-name"><span>Озеленення</span></div>
+              </div>
             </li>
           </ul>
-          <div class="additional-box">
-            <div class="additional-cont tab-cont d-center" id="tab_1">
-              <img src="img/tmp/accordion-img.png" alt="#">
+        </div>
+      </div>
+    </section>
+    <section id="schemes" class="schemes grayer">
+      <div class="wrapper">
+        <div class="row">
+          <div class="one-full">
+            <div class="title-box centro">
+              <h2 class="section-title centro rel">Схеми розміщення столів</h2>
             </div>
-            <div class="additional-cont tab-cont hidden d-center" id="tab_2">
-              <img src="img/tmp/tmp.jpg" alt="#">
-            </div>
+          </div>
+          <div class="schemes-tab tab-wrap d-flex jc-between ai-center d-block-xs">
+            <ul class="schemes-list tabs one-half-md">
+              <li class="schemes-item active">
+                <a href="#tab_1" class="schemes-link d-flex ai-center jc-start"><span class="number">80</span><span class="name">Зал зі столами та без</span></a>
+              </li>
+              <li class="schemes-item">
+                <a href="#tab_2" class="schemes-link d-flex ai-center jc-start"><span class="number">40</span><span class="name">Підключення до мережі інтернет</span></a>
+              </li>
+              <li class="schemes-item">
+                <a href="#tab_3" class="schemes-link d-flex ai-center jc-start"><span class="number">30</span><span class="name">Фліпчарт (100х300 см)</span></a>
+              </li>
+              <li class="schemes-item">
+                <a href="#tab_4" class="schemes-link d-flex ai-center jc-start"><span class="number">24</span><span class="name">Ресторан-бістро «Лемберґ»</span></a>
+              </li>
+            </ul>
+            <div class="schemes-box one-half-md">
+              <div class="schemes-cont tab-cont d-center" id="tab_1">
+                <img src="img/schemes-70-80.jpg" alt="#">
+              </div>
+              <div class="schemes-cont tab-cont hidden d-center" id="tab_2">
+                <img src="img/schemes-40.jpg" alt="#">
+              </div>
 
-            <div class="additional-cont tab-cont hidden d-center" id="tab_3">
-              <img src="img/tmp/accordion-img.png" alt="#">
-            </div>
+              <div class="schemes-cont tab-cont hidden d-center" id="tab_3">
+                <img src="img/schemes-30.jpg" alt="#">
+              </div>
 
-            <div class="additional-cont tab-cont hidden d-center" id="tab_4">
-              <img src="img/tmp/tmp.jpg" alt="#">
+              <div class="schemes-cont tab-cont hidden d-center" id="tab_4">
+                <img src="img/schemes-24.jpg" alt="#">
+              </div>
             </div>
-
-            <div class="additional-cont tab-cont hidden d-center" id="tab_5">
-              <img src="img/tmp/accordion-img.png" alt="#">
-            </div>
-
-            <div class="additional-cont tab-cont hidden d-center" id="tab_6">
-              <img src="img/tmp/tmp.jpg" alt="#">
-            </div>
-
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="hall-gallery" class="gallery">
       <div class="wrapper">
-        <div class="title-box centro">
-          <h2 class="section-title centro rel">Фотогалерея</h2>
-        </div>
-        <div class="slider-row-2-col-4 slider horizontal darken">
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-1-big.png" data-fancybox="gallery" data-caption="Абра кадабра 1">
-                <img src="img/tmp/aboute-1-small.png" alt="#">
-              </a>
+        <div class="row">
+          <div class="one-full">
+            <div class="title-box centro">
+              <h2 class="section-title centro rel">Фотогалерея</h2>
             </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-2-big.png" data-fancybox="gallery" data-caption="Абра кадабра 2">
-                <img src="img/tmp/aboute-2-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-3-big.png" data-fancybox="gallery" data-caption="Абра кадабра 3">
-                <img src="img/tmp/aboute-3-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-4-big.png" data-fancybox="gallery" data-caption="Абра кадабра 4">
-                <img src="img/tmp/aboute-4-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-5-big.png" data-fancybox="gallery" data-caption="Абра кадабра 5">
-                <img src="img/tmp/aboute-5-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-6-big.png" data-fancybox="gallery" data-caption="Абра кадабра 6">
-                <img src="img/tmp/aboute-6-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-7-big.png" data-fancybox="gallery" data-caption="Абра кадабра 7">
-                <img src="img/tmp/aboute-7-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-8-big.png" data-fancybox="gallery" data-caption="Абра кадабра 8">
-                <img src="img/tmp/aboute-8-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-4-big.png" data-fancybox="gallery" data-caption="Абра кадабра 4">
-                <img src="img/tmp/aboute-4-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-5-big.png" data-fancybox="gallery" data-caption="Абра кадабра 5">
-                <img src="img/tmp/aboute-5-small.png" alt="#">
-              </a>
-            </div>
-          </div>
-          <div class="gallery-slid">
-            <div class="img-box d-flex jc-center ai-center">
-              <a href="img/tmp/aboute-6-big.png" data-fancybox="gallery" data-caption="Абра кадабра 6">
-                <img src="img/tmp/aboute-6-small.png" alt="#">
-              </a>
+            <div class="slider-row-2-col-4 slider horizontal darken">
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-1-big.png" data-fancybox="gallery" data-caption="Абра кадабра 1">
+                    <img src="img/tmp/aboute-1-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-2-big.png" data-fancybox="gallery" data-caption="Абра кадабра 2">
+                    <img src="img/tmp/aboute-2-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-3-big.png" data-fancybox="gallery" data-caption="Абра кадабра 3">
+                    <img src="img/tmp/aboute-3-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-4-big.png" data-fancybox="gallery" data-caption="Абра кадабра 4">
+                    <img src="img/tmp/aboute-4-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-5-big.png" data-fancybox="gallery" data-caption="Абра кадабра 5">
+                    <img src="img/tmp/aboute-5-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-6-big.png" data-fancybox="gallery" data-caption="Абра кадабра 6">
+                    <img src="img/tmp/aboute-6-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-7-big.png" data-fancybox="gallery" data-caption="Абра кадабра 7">
+                    <img src="img/tmp/aboute-7-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-8-big.png" data-fancybox="gallery" data-caption="Абра кадабра 8">
+                    <img src="img/tmp/aboute-8-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-4-big.png" data-fancybox="gallery" data-caption="Абра кадабра 4">
+                    <img src="img/tmp/aboute-4-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-5-big.png" data-fancybox="gallery" data-caption="Абра кадабра 5">
+                    <img src="img/tmp/aboute-5-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="gallery-slid">
+                <div class="img-box d-flex jc-center ai-center">
+                  <a href="img/tmp/aboute-6-big.png" data-fancybox="gallery" data-caption="Абра кадабра 6">
+                    <img src="img/tmp/aboute-6-small.png" alt="#">
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

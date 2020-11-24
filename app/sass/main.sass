@@ -3,7 +3,8 @@
 @import "parts/grid"
 /* --- fonts --- */
 @import "includes/fonts.css"
-@import "includes/iconmoon.css"
+// @import "includes/iconmoon.css"
+@import "includes/fontello.css"
 
 /* --- specification --- */
 @import "parts/specification"
@@ -82,10 +83,10 @@
       background: rgba(#2C3848,.5)
       z-index: 0
   .header-content
-    padding: 40px
+    padding: 25px 40px
     z-index: 1
-    max-width: 60%
-    margin: 0 auto
+    max-width: 90%
+    margin: 40px auto 0
 .header-contact-page
   .header-wrappre
     background: url(img/contact-bg.png) no-repeat center center / cover
@@ -101,6 +102,39 @@
 .header-infrastructure-page
   .header-wrappre
     background: url(img/infrastructure-bg.png) no-repeat center center / cover
+
+.header-gallery-page
+  .header-wrappre
+    background: url(img/header-bg.jpg) no-repeat center center / cover
+
+.header-free-premises-page
+  .header-wrappre
+    background: url(img/header-bg.jpg) no-repeat center center / cover
+
+.header-no-premises-page
+  .header-wrappre
+    background: url(img/header-bg.jpg) no-repeat center center / cover
+
+.header-premises-page
+  .header-wrappre
+    background: url(img/header-bg.jpg) no-repeat center center / cover
+
+.header-type-space-page
+  .header-wrappre
+    background: url(img/header-bg.jpg) no-repeat center center / cover
+
+.header-blog-page
+  .header-wrappre
+    background: url(img/blog-bg.jpg) no-repeat center center / cover
+
+.header-article-page
+  .header-wrappre
+    // background: url(img/article-bg.jpg) no-repeat center center / cover
+    // background-image: attr(data-img);
+    background-position: center  center
+    background-repeat: no-repeat
+    background-size: cover 
+
 
 .header-plan
   margin-top: 50px
@@ -252,6 +286,8 @@
     padding: 5px 0
   .nav-line
     padding: 10px 0
+    .wrapper
+      overflow: visible
   &.active
     background: rgba(#EBEDEE, 1)
 
@@ -304,6 +340,8 @@ header .phone
   font-weight: 700
   &:hover
     color: $red
+  i
+    margin-right: 10px
 
 
   &-current
@@ -362,7 +400,7 @@ header .phone
     &.icon-left
       margin-right: 20px 
 
-.advantages-title, .accordion-title, .no-premises-title span
+.advantages-title, .accordion-title, .no-premises-title span, .article-item-title h3
   font-size: 18px
   font-weight: 700
   margin-bottom: 20px
@@ -530,19 +568,19 @@ header .phone
     opacity: 0
     transform:  translate(-50px, 50px)
 
-.additional 
+.schemes 
   &-list
-    width: 40%
+    // width: 40%
   &-box
-    width: 57%
+    // width: 57%
   &-cont
-    height: 400px
+    // height: 400px
     overflow: hidden
     img
-      height: 100%
-      width: auto
-      max-width: none
-      text-align: center
+      min-height: 100%
+      // width: auto
+      // max-width: none
+      // text-align: center
   &-link
     &:hover
       background: darken($gray, 4%)
@@ -555,13 +593,25 @@ header .phone
       margin-left: 70px
   &-img
     position: absolute
-.additional, .business-benefits
-  &-list
-    margin-right: 3%
+    right: 0
+    width: 100%
+    height: 100%
+    top: 0
+    display: flex;
+    justify-content: flex-end;
+    img
+      width: auto;
+      max-width: none;
+      height: 100%;
+  &-header
+    background: #ffffff
+.schemes, .business-benefits
+  // &-list
+  //   margin-right: 3%
   &-item
     margin-bottom: 20px
     &.active
-      .additional-link
+      .schemes-link
         background: darken($gray, 4%)
         .number
           background: $red
@@ -569,8 +619,7 @@ header .phone
     overflow: hidden
   &-link, &-header
     width: 100%
-    background: $gray
-    height: 50px
+    height: 55px
     padding-right: 10px
 
     .number
@@ -592,6 +641,10 @@ header .phone
       color: $text-white
       margin-right: 20px
 
+.schemes
+  &-link, &-header
+
+    background: $gray
 
       
 .reviews
@@ -633,13 +686,13 @@ header .phone
 .plan-img
   margin-top: 5px
 
+
 .type-space
   &-item
     margin-top: 60px
     margin-bottom: 30px
-    &:nth-last-child(even)
-      .type-space-content
-        order: -1
+    &:first-child
+      margin-top: 0
   &-title
     font-size: 18px
     text-transform: uppercase
@@ -657,38 +710,77 @@ header .phone
       position: relative
       display: flex
       align-items: center
-      width: 30%
       margin: 15px 0
       &:before
-        content: '\e900'
-        font-family: 'icomoon' !important
+        content: '\e802'
+        font-family: 'fontello' !important
         display: block
         font-size: 30px
         margin-right: 15px
 
+@media (min-width: 1201px)
+  .type-space
+    &-text, &-icon-list
+      li
+        width: 30%
 
-.free-premises
-  &-item
-    margin-bottom: 15px
-    margin-top: 15px
-    position: relative
-    &:hover
-      .free-premises-img
-        img
-          transform: scale(1.05)
-          opacity: 0.85
-  &-img
-    line-height: 0
-    overflow: hidden
+@media (min-width: 1201px)
+  .type-space
+    &-text, &-icon-list
+      li
+        width: 47%
+
+@media (min-width: 768px)
+
+  .type-space
+    &-item
+      &:nth-last-child(even)
+        .type-space-content
+          order: -1
+
+
+
+
+
+.blog  .article-item, .type-space-img
+  margin-bottom: 30px
+  .scale-img
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px
     img
-      transition: .3s all
+      width: 100%
+      max-width: none;
+      height: auto;
+
+
+@media (min-width: 768px)
+  .blog  .article-item, .type-space-img
+    .scale-img
+      height: 100%;
+      max-height: none
+      // display: flex;
+      // justify-content: center;
+      img
+        width: auto;
+        max-width: none;
+        height: 100%;
+
+
+
+.free-premises, .article   
+  &-tabs
+    margin: 0 0 15px 0
+
   &-tab
-    margin: 30px 20px
+    margin: 15px 10px
     a
       text-transform: uppercase
       text-align: center
       color: #7D7D7D
       padding: 2px 2px
+
       &:hover
         color: $text-black
         border-bottom: 1px solid $red
@@ -697,6 +789,16 @@ header .phone
         color: $text-black
         // font-weight: bold
         border-bottom: 1px solid $red
+
+@media (min-width: 768px)
+  .free-premises, .article   
+    &-tab
+      margin: 15px 20px
+.free-premises
+  &-item
+    margin-bottom: 15px
+    margin-top: 15px
+    position: relative
   &-square
     position: absolute
     bottom: 30px
@@ -708,12 +810,13 @@ header .phone
       font-weight: bold
     i
       &:before 
-        content: '\e901'
-        font-family: 'icomoon' !important
+        content: '\e811'
+        font-family: 'fontello' !important
         display: block
-        font-size: 30px
+        font-size: 36px
         font-style: normal
         margin-bottom: 10px
+        text-align: center
   &-link
     position: absolute
     width: 100%
@@ -723,18 +826,306 @@ header .phone
     margin: 0
     padding: 0
 
-  
+
 
 .no-premises
   &-wrap
-    margin-top: 30px
     margin-bottom: 30px
   &-img
     padding: 30px
     background: #F1F1F1
   &-title
     text-transform: uppercase
-        
+    margin-top: 30px
+
+
+.gallery
+  &-type
+    &-list
+      margin-bottom: 30px
+    &-item
+      margin-bottom: 15px
+      margin-top: 15px
+    &-content
+      margin: 15px 0
+      .btn
+        min-width: 190px
+
+    &-name
+      text-transform: uppercase
+      font-weight: 600
+    &-img
+      line-height: 0
+
+.free-premises-item, .gallery-type-item, .video-box, .article-item, .type-space-item, .big-gallery-item
+  .scale-img
+    line-height: 0
+    overflow: hidden
+    img
+      transition: .3s all
+  &:hover
+    .scale-img 
+      img
+        transform: scale(1.05)
+        opacity: 0.9
+
+
+
+
+.video
+  &-box
+  &-btn
+    width: 68px
+    height: 68px
+    border-radius: 50%
+    background: #FFFFFF
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    transition: all .3s
+    border: 5px solid $red
+    &:hover
+      transform: scale(1.1) translate(-45%,-45%)
+    span
+      width: 0
+      height: 0
+      border-top: 8px solid transparent
+      border-left: 14px solid $red
+      border-bottom: 8px solid transparent
+      margin-left: 2px
+
+
+.pulse
+  display: flex
+  justify-content: center
+  align-items: center
+  animation: radial-pulse 2s infinite
+  &:after, &:before
+    content: ''
+    display: flex
+    width: calc(100% + 10px)
+    height: calc(100% + 10px)
+    animation: radial-pulse 2s infinite
+    position: absolute
+    left: -5px
+    top: -5px
+    border-radius: 50%
+    
+  &:after
+    webkit-animation-delay: .5s
+    -moz-animation-delay: .5s
+    -o-animation-delay: .5s
+    animation-delay: .5s
+  &:before
+    webkit-animation-delay: 1s
+    -moz-animation-delay: 1s
+    -o-animation-delay: 1s
+    animation-delay: 1s
+
+@keyframes radial-pulse
+  0%
+    box-shadow: 0 0 0 0px rgba($red, 0.6)
+
+ 
+  75%
+    box-shadow: 0 0 0 20px rgba($red, 0)
+
+
+
+.article
+  > .wrapper
+    max-width: 1000px
+
+  &-list
+    &.grid-list
+      .article-item-title
+        margin-top: 20px
+      .article-meta-data
+        margin: 20px 0;
+      .article-meta-data .article-comment, .article-meta-data .article-date 
+        margin-right: 25px;
+        font-size: 14px
+      .article-comment i:before, .article-date i:before
+        font-size: 16px;
+
+  &-item
+    margin: 30px 0
+    &-content
+      padding-top: 15px
+      border-bottom: 1px solid #C4C4C4
+    .btn-box
+      margin: 15px 0
+  &-meta-data
+    margin: 15px 0
+    .article-date, .article-comment
+
+      margin: 5px 40px 5px 0
+  &-title
+    font-size: 20px
+    font-weight: 600
+    text-transform: uppercase
+
+  
+
+
+.article-date, .article-comment
+  color: #818890
+  i
+    &:before 
+      font-size: 18px
+      margin-right: 10px
+      color: #818890
+
+
+
+.pagination
+  margin: 50px 0 0
+  li
+    margin: 0 10px
+    display: block
+    transition: all .2s
+    a
+      padding:  10px
+      border-bottom: 2px solid transparent
+      transition: all .2s
+    &.currently, &:hover
+      > *
+        color: $red
+        font-weight: bold
+        border-bottom: 2px solid $red !important
+        padding: 10px
+        transition: all .2s
+    &.disabled
+      cursor: default
+      transition: all .2s
+      > *
+        color: #a1a1a1
+
+    
+
+
+
+
+
+.additionally
+  &-item
+    margin-bottom: 15px
+    margin-top: 15px
+  &-wrap
+    padding: 35px 30px
+    background: #F8F8F8
+  &-name
+    margin-left: 20px
+  &-icon
+    i:before
+      font-size: 36px
+      color: $red
+
+
+
+@media (min-width: 768px)
+  .additionally
+    &-icon
+      i:before
+        font-size: 46px
+
+.small-gallery, .big-gallery
+  font-size: 0
+  line-height: 0
+
+.small-gallery
+  .slick-slide
+    > div
+      padding-right: 30px
+      // height: 200px
+      overflow: hidden
+      &:first-child
+        margin-bottom: 30px
+
+
+
+  
+
+.small-gallery
+  overflow: hidden
+  .slick-list
+    margin-right: -30px
+
+
+@media (min-width: 576px)
+  .big-gallery
+    height: 100%;
+    overflow: hidden;
+    .slick-list
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%
+    .slick-track
+      height: 100%
+    &-item
+      img
+        max-width: none
+        width: auto
+        height: 100%
+div[class*="one-"], div[class*="two-"], div[class*="three-"]
+  div[class*="one-"], div[class*="two-"], div[class*="three-"]
+    padding-left: 0
+    padding-right: 0
+
+.premise
+  &-content
+  .additional, .description
+    &-information
+      margin-top: 30px
+
+  .price
+    &-box
+      background: $gray
+      // height: 100%
+      margin-top: 30px
+      padding: 30px
+    &-text
+      text-transform: uppercase
+    &-value
+      font-size: 26px
+      font-weight: 600
+      margin: 10px 0 20px
+
+.information-title
+  font-size: 18px
+  text-transform: uppercase
+  font-weight: 500
+  border-bottom: 1px solid #C4C4C4
+  padding: 10px 0
+
+.additional-information
+  padding-right: 30px !important
+
+.information-list 
+  margin: 10px 0
+  li
+    padding: 5px 0
+    span
+      font-weight: 600
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #popup-plan
   .popup-wrapper.bg
     .popup-content
@@ -951,6 +1342,16 @@ header .phone
     width: 60%
     overflow: hidden
 
+#BX_GMAP_MAP_PxWcPa
+  width: 100% !important;
+  height: 100% !important;
+
+.bx-google-view-map
+  height: 100%
+ 
+.bx-google-view-layout 
+  height: 100%
+  
 #form-contact, #form
   .form
     color: #fff
@@ -987,17 +1388,21 @@ header .phone
     width: 100%
     max-width: 850px
     margin: 0 auto
-.text-content
+.text-content, .article-content
   blockquote
     font-style: italic
     color: #979FA7
     margin: 0 0 0 30px
     padding: 10px 0 10px 30px
     border-left: 1px solid $red
+  ul
+    margin: 30px 0
   li
-    margin-bottom: 15px
+    margin-top: 10px
+    margin-bottom: 10px
     list-style-type: square
     margin-left: 30px
+    font-weight: 400
   h3, h4
     font-weight: bold
     margin-bottom: 15px
@@ -1137,8 +1542,8 @@ a.scroll-up
   .not-found-text
     font-size: 15px
   .not-found-icon
-    width: 90px;
-    margin-left: 20px;
+    width: 90px
+    margin-left: 20px
 @import "parts/media"
 
 
