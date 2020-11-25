@@ -1,0 +1,283 @@
+/* --- variables --- */
+@import "variables"
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
+*
+  outline: none
+  &:focus, &:active
+    outline: none
+body
+  font-size: 15px
+  margin: 0
+  padding: 0
+  font-family: 'Roboto', sans-serif;
+  color: $text-black
+
+h1, h2, h3, h4, p
+  margin: 0
+  padding: 0
+  font-weight: normal
+
+ul, li
+  list-style: none
+  margin: 0
+  padding: 0
+
+a, a:hover, a:focus, a:active
+  text-decoration: none
+  color: #222
+
+p
+  margin: 15px 0
+  font-size: 15px
+  line-height: 19px
+img
+  max-width: 100%
+  width: 100%
+  height: auto
+section, footer
+  padding: 60px 0
+.wrapper
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 30px
+  overflow: hidden
+
+section, .one-fourth
+  &.grayer
+    background: $gray
+.d-none
+  display: none
+
+.d-block
+  display: block
+
+.d-iblock
+  display: inline-block
+
+.d-inline
+  display: inline
+
+.d-flex
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+
+.jc
+  &-between
+    -webkit-justify-content: space-between
+    justify-content: space-between
+  &-start
+    -webkit-justify-content: flex-strt
+    justify-content: flex-strt
+  &-center
+    -webkit-justify-content: center
+    justify-content: center
+  &-end
+    -webkit-justify-content: flex-end
+    justify-content: flex-end
+  &-between
+    -webkit-justify-content: space-between
+    justify-content: space-between
+  &-around
+    -webkit-justify-content: space-around
+    justify-content: space-around
+
+.ai
+  &-start
+    -webkit-align-items: flex-start
+    align-items: flex-start
+  &-center
+    -webkit-align-items: center
+    align-items: center
+  &-end
+    -webkit-align-items: flex-end
+    align-items: flex-end
+  &-stretch
+    -webkit-align-items: stretch
+    align-items: stretch
+.d-center
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-align-items: center
+  align-items: center
+.f-wrap
+  -webkit-flex-wrap: wrap
+  flex-wrap: wrap
+
+.f-nwrap
+  -webkit-flex-wrap: nowrap
+  flex-wrap: nowrap
+
+.order-1
+  -webkit-order: 1
+  order: 1
+.order-2
+  -webkit-order: 2
+  order: 2
+.order-3
+  -webkit-order: 3
+  order: 3
+.size-full
+  width: 100%
+  height: 100%
+.w-full
+  width: 100% !important
+.btn
+  display: inline-block
+  border: 1px solid $red
+  padding: 10px 15px
+  margin: 0
+  cursor: pointer
+  line-height: 18px
+  font-size: 14px
+  -webkit-transition: $transition
+  transition: $transition
+  background: none
+  color: #222
+  text-transform: uppercase
+  &-solid
+    background: $red
+    color: #fff
+    
+    
+  &:hover
+    background: darken($red, 10%)
+    color: #fff
+    border-color: darken($red, 10%)
+  &:focus, &:active
+    color: #fff
+@-moz-document url-prefix()
+  button.btn
+    padding: 9px 15px 11px
+
+.centro
+  text-align: center
+  
+.rel
+  position: relative
+
+.abs
+  position: absolute
+
+.top-left
+  top: 0
+  left: 0
+
+.top-right
+  top: 0
+  right: 0
+
+.bottom-left
+  bottom: 0
+  left: 0
+.bold
+  font-weight: 700
+
+
+.transition, .phone, .infrastructure-content, .infrastructure-item img, .infrastructure-item .img-box, .input, .label, .mail, .accordion-img,
+.accordion-content, .accordion-subtitle, .gallery-slid, .additional-link, .additional-link .number
+  -webkit-transition: $transition
+  transition: $transition
+
+.hidden
+    position: absolute
+    left: 0
+    top: 0
+    height: 0
+    width: 0
+    overflow: hidden
+    z-index: -1
+    opacity: 0
+.tab
+  &-cont
+    opacity: 1
+    transition: opacity 0.4s
+    padding-bottom: 15px
+    &.hidden
+      opacity: 0
+h2.section-title
+  font-size: 24px
+  font-weight: bold
+  line-height: 28px
+  text-transform: uppercase
+  margin-bottom: 40px
+.section-title
+  display: inline-block
+  padding: 10px 40px
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 22px
+    height: 22px
+  &:before
+    left: 0
+    top: 0
+    border-left: 1px solid $red
+    border-top: 1px solid $red
+  &:after
+    right: 0
+    bottom: 0
+    border-right: 1px solid $red
+    border-bottom: 1px solid $red
+.input-box
+  margin-bottom: 20px
+
+.input
+  width: 100%
+  border: 1px solid #9B9FA4
+  padding: 10px 10px 10px 30px
+  color: #9B9FA4
+  background: none
+  &:hover, &:focus, &:active
+    color: lighten(#9B9FA4, 20%)
+    border: 1px solid lighten(#9B9FA4, 20%)
+    & + .label
+      color: lighten(#9B9FA4, 20%)
+.label
+  left: 10px
+  top: 50%
+  transform: translateY(-50%)
+  line-height: 15px
+  color: #9B9FA4
+  font-size: 15px
+
+.description-title
+  max-width: 700px
+  margin: 0 auto
+  color: #818890
+  margin-bottom: 30px
+  padding: 0 15px
+
+
+
+.embed-responsive 
+  position: relative
+  display: block
+  width: 100%
+  padding: 0
+  overflow: 
+  padding-top: 56.25%
+  margin: 30px 0
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 100%
+  border: 0
+
+.o-hidden
+  overflow: hidden

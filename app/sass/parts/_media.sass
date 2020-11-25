@@ -1,0 +1,581 @@
+/* --- variables --- */
+@import "variables"
+@media only screen and (min-width: 1200px)
+  .lang
+    padding: 10px 0
+    cursor: pointer
+    &:hover
+      .lang-list
+        display: block
+        background: #EBEDEE
+        padding: 10px
+        top: 35px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+    &-item
+      a
+        padding: 5px
+        display: inline-block
+        &:hover
+          color: $red
+@media only screen and (min-width: 993px)
+  .accordion
+    &-hover
+    &-list
+      &:hover
+        .accordion-item
+          width: 19.66%
+      .accordion-item
+        &:hover
+          width: 35%
+
+@media only screen and (min-width: 769px)
+  #form
+    .input-box
+      margin-bottom: 0
+    .input-box, .btn-box
+        width: 32%
+
+@media only screen and (max-width: 1200px)
+  .wrapper
+    max-width: 960px
+  .no-wrapper-lg
+    max-width: 100%
+    padding: 0
+  .d-none-lg
+    display: none
+
+  .d-block-lg
+    display: block
+
+  .d-iblock-lg
+    display: inline-block
+
+  .d-inline-lg
+    display: inline
+
+  .d-flex-lg
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+
+  .jc
+    &-between-lg
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-start-lg
+      -webkit-justify-content: flex-strt
+      justify-content: flex-strt
+    &-center-lg
+      -webkit-justify-content: center
+      justify-content: center
+    &-end-lg
+      -webkit-justify-content: flex-end
+      justify-content: flex-end
+    &-between-lg
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-around-lg
+      -webkit-justify-content: space-around
+      justify-content: space-around
+
+  .ai
+    &-start-lg
+      -webkit-align-items: flex-start
+      align-items: flex-start
+    &-center-lg
+      -webkit-align-items: center
+      align-items: center
+    &-end-lg
+      -webkit-align-items: flex-end
+      align-items: flex-end
+    &-stretch-lg
+      -webkit-align-items: stretch
+      align-items: stretch
+
+  .f-wrap-lg
+    -webkit-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .f-nwrap-lg
+    -webkit-flex-wrap: nowrap
+    flex-wrap: nowrap
+  .order-1-lg
+    -webkit-order: 1
+    order: 1
+  .order-2-lg
+    -webkit-order: 2
+    order: 2
+  .order-3-lg
+    -webkit-order: 3
+    order: 3
+  .top-line
+    .nav
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      min-height: 100vh
+      background: #E1E3E4
+      padding-bottom: 50px
+      &-list
+        flex-direction: column
+        height: 100%
+
+        li
+          margin-bottom: 15px
+          text-transform: uppercase
+          
+    .btn.planning
+      position: fixed
+      bottom: 0
+      left: 0
+      right: 0
+      margin: 0
+      background: #E74C3C
+      color: #fff
+      text-align: center
+      padding: 15px
+    .lang
+      &-list
+        position: fixed
+        left: 30px
+        top: 25px
+      &-item
+        margin-right: 15px
+        &.current
+          a
+            color: $red
+  .accordion-content, .accordion-text
+    max-width: 115px
+  .plan-floor-item
+    width: 30px
+    height: 30px
+    margin: 4px auto
+  .article-list.grid-list .article-meta-data .article-comment, .article-list.grid-list .article-meta-data .article-date
+    margin-right: 17px
+  .article-comment i:before, .article-date i:before
+    margin-right: 5px
+  .top-line .nav-secondary
+    position: absolute
+@media only screen and (max-width: 992px)
+  body, p
+    font-size: 14px
+  .wrapper
+    max-width: 720px
+  .no-wrapper-md, .no-wrapper-lg
+    max-width: 100%
+    padding: 0
+  .d-none-md
+    display: none
+
+  .d-block-md
+    display: block
+
+  .d-iblock-md
+    display: inline-block
+
+  .d-inline-md
+    display: inline
+
+  .d-flex-md
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+
+  .jc
+    &-between-md
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-start-md
+      -webkit-justify-content: flex-strt
+      justify-content: flex-strt
+    &-center-md
+      -webkit-justify-content: center
+      justify-content: center
+    &-end-md
+      -webkit-justify-content: flex-end
+      justify-content: flex-end
+    &-between-md
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-around-md
+      -webkit-justify-content: space-around
+      justify-content: space-around
+
+  .ai
+    &-start-md
+      -webkit-align-items: flex-start
+      align-items: flex-start
+    &-center-md
+      -webkit-align-items: center
+      align-items: center
+    &-end-md
+      -webkit-align-items: flex-end
+      align-items: flex-end
+    &-stretch-md
+      -webkit-align-items: stretch
+      align-items: stretch
+
+  .f-wrap-md
+    -webkit-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .f-nwrap-md
+    -webkit-flex-wrap: nowrap
+    flex-wrap: nowrap
+  .order-1-md
+    -webkit-order: 1
+    order: 1
+  .order-2-md
+    -webkit-order: 2
+    order: 2
+  .order-3-md
+    -webkit-order: 3
+    order: 3
+  .distance-value
+    font-size: 24px
+    line-height: 28px
+  .distance-title
+    font-size: 14px
+  .distance-item i
+    font-size: 30px
+  .plan-model
+    flex-direction: column-reverse
+  .plan-floor
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: center
+  .plan-floor-title
+    margin-top: 0
+    margin-right: 30px
+  .plan-floor-list
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    margin: 0
+    flex-direction: row-reverse
+  .popup-plan-cont
+    height: 300px;
+  .plan-floor-item
+    margin: 1px
+  .infrastructure-item.big
+    width: 31.5%
+    min-width: 31.5%
+  .infrastructure-item.big:nth-child(4n)
+    margin-right: 2.66%
+  .infrastructure-item.big:nth-child(3n)
+    margin-right: 0
+  .infrastructure-item.small
+    width: 21%;
+    min-width: 21%;
+    margin: 0 2% 30px;
+  .accordion-item
+    width: 48%
+    margin-right: 4%
+    margin-bottom: 4%
+    padding: 30px 25px
+    &:nth-child(2n)
+      margin-right: 0
+
+  .accordion-content, .accordion-text
+    max-width: 100%
+  .accordion-title
+    padding-top: 25px
+  .accordion-text
+    padding-bottom: 45px
+@media only screen and (max-width: 767px)
+  .wrapper
+    max-width: 540px
+  .no-wrapper-sm, .no-wrapper-md, .no-wrapper-lg
+    max-width: 100%
+
+  .d-none-sm
+    display: none
+
+  .d-block-sm
+    display: block
+
+  .d-iblock-sm
+    display: inline-block
+
+  .d-inline-sm
+    display: inline
+
+  .d-flex-sm
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+
+  .jc
+    &-between-sm
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-start-sm
+      -webkit-justify-content: flex-strt
+      justify-content: flex-strt
+    &-center-sm
+      -webkit-justify-content: center
+      justify-content: center
+    &-end-sm
+      -webkit-justify-content: flex-end
+      justify-content: flex-end
+    &-between-sm
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-around-sm
+      -webkit-justify-content: space-around
+      justify-content: space-around
+
+  .ai
+    &-start-sm
+      -webkit-align-items: flex-start
+      align-items: flex-start
+    &-center-sm
+      -webkit-align-items: center
+      align-items: center
+    &-end-sm
+      -webkit-align-items: flex-end
+      align-items: flex-end
+    &-stretch-sm
+      -webkit-align-items: stretch
+      align-items: stretch
+
+  .f-wrap-sm
+    -webkit-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .f-nwrap-sm
+    -webkit-flex-wrap: nowrap
+    flex-wrap: nowrap
+  .order-1-sm
+    -webkit-order: 1
+    order: 1
+  .order-2-sm
+    -webkit-order: 2
+    order: 2
+  .order-3-sm
+    -webkit-order: 3
+    order: 3
+  .distance-item
+    &:first-child
+      border-left: none
+    &:last-child
+      border-right: none
+  .infrastructure-item.big
+    width: 49%
+    min-width: 49%
+  .infrastructure-item.big, .infrastructure-item.big:nth-child(4n), .infrastructure-item.big:nth-child(3n)
+    margin-right: 2%
+  .infrastructure-item.big:nth-child(2n)
+    margin-right: 0
+  .infrastructure-item.small
+    width: 28%;
+    min-width: 28%;
+  #form-contact .form
+    width: 100%
+  #form-contact .map
+    width: 100%
+    min-height: 300px
+    height: 300px
+  #footer .nav-list
+    text-align: center
+  #footer .nav-list li
+    margin: 10px 15px
+  .distance-item
+    width: 20%
+    padding: 15px
+  .distance-value
+    font-size: 20px
+    line-height: 22px
+  .distance-title
+    font-size: 13px
+  .header-title
+    font-size: 32px
+  .additional-tab
+    padding: 0 30px
+  .location-box
+    width: 100%
+@media only screen and (max-width: 576px)
+  .header-title, .page-title
+      font-size: 20px
+  .header-slid-wrapper
+    max-width: 80%
+  .header-slid-content
+    padding: 40px 25px
+  .header-slid
+    padding-top: 20px
+  .header-slider .slick-dots
+    right: 6%
+  h2.section-title
+    font-size: 18px
+  .wrapper
+    padding: 0 15px
+  .no-wrapper-sm, .no-wrapper-md, .no-wrapper-lg
+    max-width: 100%
+    padding: 0
+  .d-none-xs
+    display: none
+
+  .d-block-xs
+    display: block
+
+  .d-iblock-xs
+    display: inline-block
+
+  .d-inline-xs
+    display: inline
+
+  .d-flex-xs
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+
+  .jc
+    &-between-xs
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-start-xs
+      -webkit-justify-content: flex-strt
+      justify-content: flex-strt
+    &-center-xs
+      -webkit-justify-content: center
+      justify-content: center
+    &-end-xs
+      -webkit-justify-content: flex-end
+      justify-content: flex-end
+    &-between-xs
+      -webkit-justify-content: space-between
+      justify-content: space-between
+    &-around-xs
+      -webkit-justify-content: space-around
+      justify-content: space-around
+
+  .ai
+    &-start-xs
+      -webkit-align-items: flex-start
+      align-items: flex-start
+    &-center-xs
+      -webkit-align-items: center
+      align-items: center
+    &-end-xs
+      -webkit-align-items: flex-end
+      align-items: flex-end
+    &-stretch-xs
+      -webkit-align-items: stretch
+      align-items: stretch
+
+  .f-wrap-xs
+    -webkit-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .f-nwrap-xs
+    -webkit-flex-wrap: nowrap
+    flex-wrap: nowrap
+  .order-1-xs
+    -webkit-order: 1
+    order: 1
+  .order-2-xs
+    -webkit-order: 2
+    order: 2
+  .order-3-xs
+    -webkit-order: 3
+    order: 3
+  #footer
+    .logo
+      margin: 0 auto 30px
+    .social-list
+      justify-content: center
+      margin-top: 30px
+  .distance-item
+    width: 50%
+    border: none
+    border-bottom: 1px solid #ced2d6
+    &:last-child
+      border-bottom: none
+    &:nth-child(2n)
+      border-left: 1px solid #ced2d6
+  .distance.darken
+    .distance-item
+      border-bottom: 1px solid #3a424e
+      &:last-child
+        border-bottom: none
+      &:nth-child(2n)
+        border-left: 1px solid #3a424e
+  .plan-floor
+    display: block
+  .plan-floor-title
+    margin: 15px 0
+    text-align: center
+  .plan-floor-list
+    justify-content: center
+  .popup-floor-link
+    width: 29px
+    height: 29px
+    margin: 2px
+  .popup-plan-cont
+    height: 200px
+  .popup-floor-title
+    margin-top: 20px
+    display: block
+    text-align: center
+    font-weight: 700
+    text-transform: uppercase
+  .popup-plan-link
+    padding: 10px 15px
+  .popup-floor-list
+    margin-top: 15px
+  .infrastructure-content.big
+    font-size: 13px
+    word-wrap: break-word
+    line-height: 14px
+  .infrastructure-item.small
+    width: 46%;
+    min-width: 28%;
+    font-size: 14px
+  .infrastructure-box .text
+    display: none
+  .additional-list
+    width: 100%
+    margin-right: 0
+  .additional-link
+    margin-bottom: 8px
+    height: 44px
+  .additional-tab
+    padding: 0 15px
+  .additional-box
+    width: 100%
+  .additional-cont
+    height: 340px
+  .accordion-item
+    width: 100%
+    margin-right: auto
+    margin-left: auto
+    max-width: 370px
+  .accordion-item:nth-child(2n)
+    margin-right: auto
+  .location-item
+    height: 55px
+    margin-bottom: 10px
+  #form .form-title, #form-contact .form-title
+    color: #e74c3c
+    text-transform: uppercase
+    font-size: 22px

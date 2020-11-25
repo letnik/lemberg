@@ -1,0 +1,89 @@
+/* --- variables --- */
+@import "../parts/variables"
+
+$bg-popup: rgba(#222, .6)
+
+
+
+#data-video-popup
+  display: none !important
+
+
+
+
+
+
+.popup
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  z-index: 110
+  background: $bg-popup
+  &-wrapper
+    background: #fff
+
+    max-width: 900px
+    width: 100%
+    max-height: 100%
+    margin: auto
+    overflow: auto;
+    z-index: 1
+    top: -30%
+    -webkit-transition: $transition
+    transition: $transition
+  &-close, &-video-close
+    cursor: pointer
+    right: 30px
+    top: 28px
+    i
+      font-size: 17px
+    &-bg
+      z-index: 0
+      display: block
+      position: absolute
+  &.popup-animated
+    .popup-wrapper
+      top: 0
+.popup
+  &-title-wrapper
+    padding: 25px 60px;
+    border-bottom: 1px solid #DCDCDE
+    text-align: center
+    
+  h3
+    margin: 0
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: 700
+    
+  &-icon-wrapper
+    padding: 0 60px
+
+  &-icon
+    width: 90px
+    height: 90px
+    background: #2C3848
+    i
+      color: #F9F9F9
+      font-size: 34px
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+  &-text
+    padding: 30px 60px 30px 0
+
+@media only screen and (max-width: 576px)
+  .popup-icon-wrapper
+    padding: 30px
+  .popup-text
+    padding: 0 30px 30px 30px;
+
+#data-video-content, #popup-video-data .popup-text
+  padding: 0 30px
+
+#popup-video-data .popup-content
+  padding-bottom: 20px

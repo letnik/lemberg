@@ -47,6 +47,43 @@ $(function(){
       }
     ]
   });
+
+  $('.reviews-list').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 700,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+
+
 });
 
 // popup
@@ -88,7 +125,7 @@ jQuery(document).ready(function(){
 $(function(){
   var menu_selector = ".nav-js"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
   function onScroll(){
-    var scroll_top = $(document).scrollTop() + 65;
+    var scroll_top = $(document).scrollTop() - 65;
     $(menu_selector + " a.scroll").each(function(){
       var hash = $(this).attr("href");
       var target = $(hash);
@@ -111,7 +148,7 @@ $(function(){
       var hash = $(this).attr("href");
       var target = $(hash);
       $("html, body").animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 65
       }, 500, function(){
         window.location.hash = hash;
         $(document).on("scroll", onScroll);
@@ -303,6 +340,53 @@ $(function(){
   });
 });
 
+
+
+
+// popup + video
+$(document).ready(function () {
+
+  $('.popup-video-open').on('click', function() {
+
+    var popUpData = $(this).data('popupName');
+        popUpId = document.getElementById(popUpData);
+        
+    $(popUpId).fadeIn();
+    $(popUpId).addClass('popup-animated');
+
+    var data         = $('body').find('#data-video-popup .data-js').html();
+
+    $('#data-video-content').html(data)
+
+  });
+
+  $('.popup-video-close, .popup-video-close-bg').on('click', function() {
+
+    var popUpData = $(this).data('popupName');
+      popUpId = document.getElementById(popUpData);
+
+    $(popUpId).fadeOut();
+    $(popUpId).removeClass('popup-animated');
+    setTimeout(function () {
+      $('#data-video-content > div').remove();
+    }, 800);
+
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(function(){
 
 $('.slider-row-2-col-4').slick({
@@ -347,5 +431,79 @@ $(function(){
 });
 
 
+$(function(){
+$('.big-gallery').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.small-gallery'
+  // speed: 700,
+  // autoplay: true,
+  // autoplaySpeed: 992000
+});
+
+$('.small-gallery').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  rows: 2,
+  dots: false,
+  arrows: false,
+  infinite: true,
+  // centerMode: true,
+  focusOnSelect: true,
+  asNavFor: '.big-gallery'
+});
+
+});
 
 
+// document.addEventListener('DOMContentLoaded', function() {
+
+
+
+//   jQuery('.type-space-item').find('.type-space-title').appendTo(".subclass", $this);
+// }, false);
+
+// $(document).ready(function() {
+
+// $('.type-space-item').watch(function() {
+
+  // var w = $('.type-space-item')
+  // $('.type-space-item').click(function() {
+  //   $(this.find('.type-space-item').add(".class");
+  // });
+
+  // w.find('.type-space-item').appendTo(".type-space-img");
+
+  // });
+// });
+
+// $(document).ready(function() {
+//   var w = $('.type-space-item').width();
+
+//   if(document.documentElement.clientWidth < 993) {
+//     jQuery(this).find('.type-space-title', $this).appendTo(".type-space-img");
+//   }
+// });
+
+// jQuery('.type-space-item').find('.type-space-title', $this).appendTo(".type-space-img", $this);
+
+
+
+// $('.type-space-item').ready(function() {
+
+// // $('.type-space-item').click(function() {
+//   $( this ).find('.type-space-title').appendTo(".type-space-img");
+//   return;
+// });
+
+
+ 
+$('a[href*="#"].scroll-btn').on('click', function (e) {
+  e.preventDefault();
+ 
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top - 100
+  }, 300, 'linear');
+});
