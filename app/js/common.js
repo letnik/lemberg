@@ -340,6 +340,53 @@ $(function(){
   });
 });
 
+
+
+
+// popup + video
+$(document).ready(function () {
+
+  $('.popup-video-open').on('click', function() {
+
+    var popUpData = $(this).data('popupName');
+        popUpId = document.getElementById(popUpData);
+        
+    $(popUpId).fadeIn();
+    $(popUpId).addClass('popup-animated');
+
+    var data         = $('body').find('#data-video-popup .data-js').html();
+
+    $('#data-video-content').html(data)
+
+  });
+
+  $('.popup-video-close, .popup-video-close-bg').on('click', function() {
+
+    var popUpData = $(this).data('popupName');
+      popUpId = document.getElementById(popUpData);
+
+    $(popUpId).fadeOut();
+    $(popUpId).removeClass('popup-animated');
+    setTimeout(function () {
+      $('#data-video-content > div').remove();
+    }, 800);
+
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(function(){
 
 $('.slider-row-2-col-4').slick({

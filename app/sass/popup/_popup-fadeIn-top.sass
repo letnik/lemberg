@@ -3,6 +3,16 @@
 
 $bg-popup: rgba(#222, .6)
 
+
+
+#data-video-popup
+  display: none !important
+
+
+
+
+
+
 .popup
   position: fixed
   top: 0
@@ -25,7 +35,7 @@ $bg-popup: rgba(#222, .6)
     top: -30%
     -webkit-transition: $transition
     transition: $transition
-  &-close
+  &-close, &-video-close
     cursor: pointer
     right: 30px
     top: 28px
@@ -48,6 +58,7 @@ $bg-popup: rgba(#222, .6)
     margin: 0
     text-transform: uppercase
     font-size: 18px
+    font-weight: 700
     
   &-icon-wrapper
     padding: 0 60px
@@ -70,3 +81,9 @@ $bg-popup: rgba(#222, .6)
     padding: 30px
   .popup-text
     padding: 0 30px 30px 30px;
+
+#data-video-content, #popup-video-data .popup-text
+  padding: 0 30px
+
+#popup-video-data .popup-content
+  padding-bottom: 20px

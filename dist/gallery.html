@@ -166,10 +166,10 @@
         <div class="row">
           <div class="video-box rel">
             <div class="one-full">
-              <div class="video-img scale-img w-full ">
+              <div class="video-img w-full">
                 <img src="img/video-bg.jpg" alt="#">
               </div>
-              <a href="#" class="video-btn abs pulse"><span></span></a>
+              <button href="#" class="video-btn abs pulse popup-video-open" data-popup-name="popup-video-data"><span></span></button>
             </div>
           </div>
         </div>
@@ -251,6 +251,46 @@
         </div>
       </div>
     </footer>
+
+
+    <div class="popup rel d-none"  id="popup-video-data">
+      <div class="size-full d-flex jc-center ai-center">
+        <div class="popup-wrapper rel">
+          <div class="popup-content rel">
+
+            <div class="popup-title-wrapper">
+              <h3>Корейка для натуральних відбивних</h3>
+            </div>
+
+            <div id="data-video-content">data-js</div>
+
+            <div class="popup-text">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quas possimus vitae iure veniam amet?</p>
+              <p>Lorem, <b>ipsum dolor sit </b>amet consectetur adipisicing. Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur in deserunt earum sint amet ducimus quaerat iste eveniet commodi?</p>
+            </div>
+            <div class="popup-video-close abs" data-popup-name="popup-video-data">
+              <i class="icon-close"></i>
+            </div>
+          </div>
+        </div>
+        <span class="popup-video-close-bg size-full abs" data-popup-name="popup-video-data"></span>
+      </div>
+    </div>
+
+    <div id="data-video-popup" >
+      <div class="data-js">
+
+        <div class="popup-video">
+          <div class="embed-responsive">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m04dNK-e7pQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
 
     <a href="#header" class="scroll-up scroll d-none"></a>
 
