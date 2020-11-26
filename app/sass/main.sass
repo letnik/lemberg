@@ -1112,7 +1112,17 @@ div[class*="one-"], div[class*="two-"], div[class*="three-"]
     span
       font-weight: 600
 
-
+.item-hover
+  transform: scale(1);
+  // transition: all .3s;
+  transition: cubic-bezier(.27,-1.23,.67,2.08) .3s;
+  &:hover 
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.15);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background: #fff;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
 
 
 
